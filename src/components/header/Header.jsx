@@ -1,5 +1,4 @@
 import './Header.css';
-import '../../styles/utils.css';
 import Logo from './Logo';
 import Nav from './Nav';
 

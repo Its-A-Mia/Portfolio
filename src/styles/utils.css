@@ -7,3 +7,7 @@
   margin: 0 auto;
   border: black solid 1px;
 }
+
+.section-title {
+  font-family: 'Fredoka One', cursive;
+}
