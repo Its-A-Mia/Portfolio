@@ -1,9 +1,19 @@
 /* ===================
-         Classes
+        Typography
     =================== */
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  border: black solid 1px;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Antic', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  font-family: 'Antic', sans-serif;
+  cursor: pointer;
 }
