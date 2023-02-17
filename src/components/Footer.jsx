@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <div className="container">Footer</div>
+      <div className="container">Designed & Built by Mia Purdun</div>
     </footer>
   );
 };
