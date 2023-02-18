@@ -1,12 +1,14 @@
 import './Hero.css';
+import HeroCanvas from './HeroCanvas';
 import HeroGreeting from './HeroGreeting';
 
 const Hero = () => {
   return (
-    <div>
-      <div className="container">
+    <div className="hero">
+      <div className="container hero-container">
         <HeroGreeting />
       </div>
+      <HeroCanvas />
     </div>
   );
 };
