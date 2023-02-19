@@ -23,7 +23,7 @@ const ProjectsCard = () => {
   ];
 
   return (
-    <div className="projects-card">
+    <div className="projects-card grid">
       <div className="projects-card-image-container">
         <div className="projects-card-image-border">
           <img className="projects-card-image" src={projects[0].imgSrc} alt={projects[0].alt}></img>

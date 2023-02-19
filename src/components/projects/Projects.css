@@ -31,10 +31,7 @@
     =============== */
 
 .projects-card {
-  display: grid;
   grid-column: 1 / span 13;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1;
   column-gap: 20px;
   text-align: end;
 }
