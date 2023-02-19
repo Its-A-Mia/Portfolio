@@ -24,7 +24,11 @@ const ProjectsCard = () => {
 
   return (
     <div className="projects-card">
-      <img className="projects-card-image" src={projects[0].imgSrc} alt={projects[0].alt}></img>
+      <div className="projects-card-image-container">
+        <div className="projects-card-image-border">
+          <img className="projects-card-image" src={projects[0].imgSrc} alt={projects[0].alt}></img>
+        </div>
+      </div>
       <div className="projects-card-content">
         <h3 className="projects-card-content-title">{projects[0].title}</h3>
         <p className="projects-card-content-text">{projects[0].description}</p>
@@ -34,7 +38,7 @@ const ProjectsCard = () => {
           ))}
         </div>
         {projects[0].urls.map((url) => (
-          <a role="button" className="projects-card-content-btn" href={url.url}>
+          <a role="button" className="projects-card-content-btn" href={url.url} target="blank">
             {url.type}
           </a>
         ))}
