@@ -13,6 +13,12 @@
   border: black solid 1px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
 /* ===================
         Typography
     =================== */
@@ -22,6 +28,7 @@
 }
 
 .section-title {
+  grid-column: 2;
   font-family: 'Fredoka One', cursive;
 }
 
