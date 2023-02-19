@@ -3,13 +3,15 @@
     =============== */
 
 header {
+  height: 96px;
   background: rgb(202, 101, 219);
   background: linear-gradient(180deg, rgba(202, 101, 219, 1) 0%, rgba(171, 71, 188, 1) 100%);
 }
 
 .header-container {
+  grid-column: 3 / span 8;
   display: flex;
-  height: 96px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   color: white;

@@ -10,7 +10,7 @@
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
-  border: black solid 1px;
+  /* border: black solid 1px; */
 }
 
 .grid {
@@ -35,4 +35,36 @@
 
 .subtitle {
   font-family: 'Pacifico', cursive;
+}
+
+/* ===================
+        images
+    =================== */
+
+.image-border {
+  display: flex;
+  width: fit-content;
+  z-index: 0;
+  position: relative;
+}
+
+.image-border::before,
+.image-border::after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  background: #f7f7f7;
+}
+
+.image-border::before {
+  top: -5px;
+  left: -5px;
+}
+
+.image-border::after {
+  right: -5px;
+  bottom: -5px;
 }

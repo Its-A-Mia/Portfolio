@@ -45,3 +45,11 @@ a {
   font-family: 'Antic', sans-serif;
   cursor: pointer;
 }
+
+/* ===================
+        Typography
+    =================== */
+
+img {
+  border-radius: 5px;
+}
