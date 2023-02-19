@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className="projects">
       <div className="container grid">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title projects-title">Projects</h2>
         <ProjectsNav />
         <ProjectsCard />
       </div>

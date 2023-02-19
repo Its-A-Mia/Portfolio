@@ -9,6 +9,10 @@
   color: #f7f7f7;
 }
 
+.projects-title {
+  grid-column: 2;
+}
+
 /* ===============
       ProjectsNav
     =============== */
