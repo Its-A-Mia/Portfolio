@@ -4,7 +4,7 @@ import ProjectsNav from './ProjectsNav';
 
 const Projects = () => {
   return (
-    <section>
+    <section className="projects">
       <div className="container">
         <h2 className="section-title">Projects</h2>
         <ProjectsNav />

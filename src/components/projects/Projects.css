@@ -2,10 +2,76 @@
         Projects
     =============== */
 
+.projects {
+  background: rgb(142, 36, 170);
+  background: linear-gradient(0deg, rgba(142, 36, 170, 1) 0%, rgba(171, 71, 188, 1) 100%);
+  color: #f7f7f7;
+}
+
 /* ===============
       ProjectsNav
     =============== */
 
 .projects-nav {
+  margin: 2em 0 2em 0;
   display: flex;
+  justify-content: center;
+}
+
+.projects-nav-item {
+  cursor: pointer;
+  padding: 4px 16px;
+  border-bottom: solid #333333 3px;
+}
+
+/* ===============
+      ProjectsCard
+    =============== */
+
+.projects-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1;
+  column-gap: 20px;
+  text-align: end;
+}
+
+.projects-card-image {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+}
+
+.projects-card-content {
+  grid-column: 7 / span 5;
+  grid-row: 1;
+}
+
+.projects-card-content-title {
+  padding: 1em 0;
+}
+
+.projects-card-content-text {
+  color: black;
+  border-radius: 5px;
+  background: #ce93d8;
+  box-shadow: 2px 2px 8px black;
+  padding: 1em 2em 1em 4em;
+}
+
+.projects-card-content-subtext-container {
+  display: flex;
+  justify-content: end;
+  padding: 1em 0;
+}
+
+.projects-card-content-subtext {
+  color: #ffb74d;
+  padding: 0 0.5em;
+}
+
+.projects-card-content-btn {
+  margin: 2em 2em;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background: #ce93d8;
 }
