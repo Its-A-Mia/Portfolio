@@ -4,6 +4,7 @@
 
 .projects {
   background: rgb(142, 36, 170);
+  z-index: -1;
   background: linear-gradient(0deg, rgba(142, 36, 170, 1) 0%, rgba(171, 71, 188, 1) 100%);
   color: #f7f7f7;
 }
