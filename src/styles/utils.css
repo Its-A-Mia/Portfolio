@@ -28,21 +28,9 @@
 }
 
 .section-title {
-  grid-column: 2;
   font-family: 'Fredoka One', cursive;
   position: relative;
   z-index: 0;
-}
-
-.section-title:before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  z-index: -1;
-  bottom: 0;
-  width: 67%;
-  height: 30%;
-  background: #ff9a05;
 }
 
 .subtitle {
