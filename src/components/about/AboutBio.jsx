@@ -4,7 +4,7 @@ const AboutBio = () => {
   return (
     <div className="bio-container grid">
       <div className="bio-image-container">
-        <div className="bio-image-border">
+        <div className="image-border">
           <img className="bio-image" alt="a full-body shot of myself, Mia Purdun" src={bioImage}></img>
         </div>
       </div>
