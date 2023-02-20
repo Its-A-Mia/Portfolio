@@ -1,9 +1,9 @@
 const Nav = () => {
   return (
     <nav>
-      <a className="nav-link">projects</a>
-      <a className="nav-link">about</a>
-      <a className="nav-link">contact</a>
+      <a className="nav-link">Projects</a>
+      <a className="nav-link">About</a>
+      <a className="nav-link">Contact</a>
     </nav>
   );
 };

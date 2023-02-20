@@ -25,6 +25,26 @@ nav {
   font-size: 1.125rem;
 }
 
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  width: 20%;
+  height: 20%;
+  background: var(--tertiary-color);
+  transition: all 200ms;
+}
+
+.nav-link:hover::before {
+  width: 70%;
+}
+
 /* ===============
         logo
     =============== */
