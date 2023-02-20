@@ -3,7 +3,7 @@ const designIcon = () => {
     <svg className="design-icon" viewBox="0 0 158 158" fill="none" xmlns="http://www.w3.org/2000/svg">
       <mask
         id="mask0_102_301"
-        style="mask-type:luminance"
+        style={{ maskType: 'luminance' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

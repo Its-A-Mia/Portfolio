@@ -1,0 +1,14 @@
+/* ===============
+        Icon
+    =============== */
+
+.send-message-icon {
+  width: 154px;
+}
+
+.frontend-icon,
+.backend-icon,
+.tools-icon,
+.design-icon {
+  width: 50px;
+}
