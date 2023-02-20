@@ -9,6 +9,7 @@ const Header = () => {
         <Logo />
         <Nav />
       </div>
+      <div className="golden-border golden-border-bottom"></div>
     </header>
   );
 };
