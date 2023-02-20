@@ -35,7 +35,7 @@ const SkillsCard = ({ skillType }) => {
       <ul className="skill-card-list" role="list">
         {skills[skillType].map((skill, i) => (
           <li className="skill-card-list-items" key={i}>
-            {'> ' + skill}
+            {skill}
           </li>
         ))}
       </ul>

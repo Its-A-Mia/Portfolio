@@ -50,15 +50,20 @@
     =============== */
 
 .skills-container {
-  grid-column: 3 / span 9;
+  grid-column: 2 / span 9;
 }
 
 .skill-card-container {
   position: relative;
-  width: 200px;
+  /* width: 200px; */
   box-shadow: 0 0 8px black;
   padding: 1em;
   border-radius: 5px;
+  transition: all 200ms;
+}
+
+.skill-card-container:hover {
+  transform: scale(1.1);
 }
 
 .skill-card-container::before {
@@ -67,12 +72,18 @@
   left: 0;
   top: 0;
   z-index: -1;
+  border-radius: 5px 5px 0 0;
   width: 100%;
   height: 5em;
-  background: var(--accent-color);
+  background: var(--secondary-color);
 }
 
 .skill-card-title {
   font-weight: 700;
-  margin: 0.5em 0;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+.skill-card-list {
+  list-style: inside;
 }
