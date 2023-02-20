@@ -2,10 +2,43 @@
         Contact
     =============== */
 
+.contact-title {
+  grid-column: 2 / span 12;
+}
+
+.contact-title::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  z-index: -1;
+  bottom: 0;
+  width: 4.725em;
+  height: 30%;
+  background: #ff9a05;
+}
+
+.contact-icon-container {
+  justify-self: center;
+  align-self: center;
+  grid-column: 7 / span 3;
+}
+
+.contact-input-container {
+  padding: 3em 0;
+  grid-column: 2 / span 5;
+}
+
 /* ===============
-        ContactInput
+      ContactInput
     =============== */
 
 .contact-input-label {
-  grid-column: 2 / span 5;
+}
+
+/* ===============
+        Icon
+    =============== */
+
+.send-message-icon {
+  width: 154px;
 }

@@ -91,14 +91,15 @@
   margin: 0 2em;
   padding: 0.375em 0.875em;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
   /* font-weight: 700; */
   color: black;
-  background: #ce93d8;
-  border: solid #ce93d8 2px;
+  background: #ff9a05;
+  border: solid #ff9a05 2px;
   transition: all 200ms;
 }
 
 .projects-card-content-btn:hover {
-  background: #8e24aa;
+  background: #333;
   color: #f7f7f7;
 }
