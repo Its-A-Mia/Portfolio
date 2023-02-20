@@ -9,10 +9,7 @@ header {
 }
 
 .header-container {
-  grid-column: 3 / span 8;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   color: white;
 }
@@ -21,6 +18,7 @@ header {
         Nav
     =============== */
 nav {
+  grid-column: 11;
   display: flex;
   gap: 64px;
   font-size: 1.125rem;
@@ -31,6 +29,7 @@ nav {
     =============== */
 
 .logo {
+  grid-column: 2;
   font-size: 2rem;
   font-family: 'Pacifico', cursive;
 }

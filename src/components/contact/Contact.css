@@ -1,0 +1,11 @@
+/* ===============
+        Contact
+    =============== */
+
+/* ===============
+        ContactInput
+    =============== */
+
+.contact-input-label {
+  grid-column: 2 / span 5;
+}

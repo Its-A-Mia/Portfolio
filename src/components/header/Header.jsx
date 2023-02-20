@@ -4,8 +4,8 @@ import Nav from './Nav';
 
 const Header = () => {
   return (
-    <header className="grid">
-      <div className="container header-container">
+    <header>
+      <div className="container header-container grid">
         <Logo />
         <Nav />
       </div>
