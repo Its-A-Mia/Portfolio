@@ -5,7 +5,7 @@ import SendMessageIcon from './SendMessageIcon';
 
 const Contact = () => {
   return (
-    <section className="container  grid">
+    <section className="container grid" id="contact">
       <h2 className="section-title contact-title">Contact Me</h2>
 
       <div className="contact-input-container">
