@@ -44,3 +44,11 @@
   max-width: 43em;
   padding-bottom: 2em;
 }
+
+/* ===============
+        Skills
+    =============== */
+
+.skills-container {
+  grid-column: 1 / span 11;
+}

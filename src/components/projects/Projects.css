@@ -35,9 +35,26 @@
 }
 
 .projects-nav-item {
+  position: relative;
   cursor: pointer;
-  padding: 4px 16px;
+  padding: 2px 16px;
+  border-radius: 5px 5px 0 0;
+  border-top: solid transparent 3px;
+  border-right: solid transparent 3px;
+  border-left: solid transparent 3px;
   border-bottom: solid var(--dark) 3px;
+  transition: all 200ms;
+}
+
+.projects-nav-item:hover {
+  border: solid var(--tertiary-color) 3px;
+}
+
+.projects-nav-button,
+.projects-nav-button:hover {
+  background: none;
+  border: none;
+  color: white;
 }
 
 /* ===============

@@ -1,7 +1,6 @@
+import SendMessageIcon from '../icons/SendMessageIcon';
 import './Contact.css';
 import ContactInput from './ContactInput';
-import sendMessageIcon from '../../assets/send-message-icon.svg';
-import SendMessageIcon from './SendMessageIcon';
 
 const Contact = () => {
   return (
