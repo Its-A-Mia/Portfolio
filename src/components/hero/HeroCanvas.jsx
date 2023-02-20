@@ -1,62 +1,54 @@
-import { useRef, useEffect } from 'React';
+import variantOne from '../../assets/dandelion-seed-var-1.svg';
+import variantTwo from '../../assets/dandelion-seed-var-2.svg';
+import variantThree from '../../assets/dandelion-seed-var-3.svg';
+import variantFour from '../../assets/dandelion-seed-var-4.svg';
+import variantFive from '../../assets/dandelion-seed-var-5.svg';
+
+import { useRef, useEffect, useState } from 'React';
 
 const HeroCanvas = () => {
   const canvasRef = useRef(null);
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
 
-  const drawDandelionSeed = (ctx) => {
-    const X_START = 50;
-    const Y_START = 50;
+  // variant bank
+  // draw bank -- x, y, seed variant
+  // cleanup draw bank function -- once x hits a certain width, remove from bank
+  // draw should pull from draw bank
 
-    let x = X_START;
-    let y = Y_START;
+  function dandelionSeed(x, y, variantSrc, ctx) {
+    this.x = x;
+    this.y = y;
+    const dandelion_seed = new Image();
+    dandelion_seed.src = variantSrc;
 
-    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-    ctx.strokeStyle = '#D4D4D4';
-    ctx.lineWidth = 3;
-    ctx.lineCap = 'round';
+    this.dx = Math.random() * 0.3 + 0.01;
+    this.dy;
 
-    // const time = new Date();
-    // ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
+    this.draw = function () {
+      ctx.drawImage(dandelion_seed, this.x, this.y);
+    };
 
-    ctx.beginPath();
-    // ctx.moveTo(40.5, 40);
-    // ctx.lineTo(40.5, 20);
-    ctx.moveTo(x, y);
-    ctx.lineTo(x, y - 20);
-    ctx.closePath();
-    ctx.stroke();
+    this.animate = function () {
+      this.x += this.dx;
 
-    ctx.beginPath();
-    // ctx.moveTo(40.5, 20);
-    // ctx.lineTo(55, 13.5);
-    ctx.moveTo(x, y - 20);
-    ctx.lineTo(x + 14.5, y - 26.5);
-    ctx.closePath();
-    ctx.stroke();
+      this.draw();
+    };
+  }
 
-    ctx.beginPath();
-    // ctx.moveTo(40.5, 20);
-    // ctx.lineTo(47, 8.75);
-    ctx.moveTo(x, y - 20);
-    ctx.lineTo(x + 6.5, y - 31.25);
-    ctx.closePath();
-    ctx.stroke();
+  const dandelionSeedVariantSources = [variantOne, variantTwo, variantThree, variantFour, variantFive];
 
-    ctx.beginPath();
-    // ctx.moveTo(40.5, 20);
-    // ctx.lineTo(26, 13.5);
-    ctx.moveTo(x, y - 20);
-    ctx.lineTo(x - 14.5, y - 26.5);
-    ctx.closePath();
-    ctx.stroke();
-
-    ctx.beginPath();
-    // ctx.moveTo(40.5, 20);
-    // ctx.lineTo(35, 8.75);
-    ctx.moveTo(x, y - 20);
-    ctx.lineTo(x - 5.5, y - 31.25);
-    ctx.closePath();
-    ctx.stroke();
+  const populateSeedBank = (ctx) => {
+    let tempSeedBank = [];
+    for (let seed = 0; seed < 50; seed++) {
+      let x = -50;
+      let y = Math.floor(Math.random() * (ctx.canvas.height - 50));
+      let variantSrc = dandelionSeedVariantSources[Math.floor(Math.random() * 5)];
+      tempSeedBank.push(new dandelionSeed(x, y, variantSrc, ctx));
+    }
+    return tempSeedBank;
   };
 
   useEffect(() => {
@@ -69,24 +61,34 @@ const HeroCanvas = () => {
       let dpi = window.devicePixelRatio;
 
       //the + prefix casts it to an integer
-      //the slice method gets rid of "px"let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);//get CSS width
+      //the slice method gets rid of "px" let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);//get CSS width
       let style_height = +getComputedStyle(canvas).getPropertyValue('height').slice(0, -2);
       let style_width = +getComputedStyle(canvas).getPropertyValue('width').slice(0, -2);
 
       //scale the canvas
       canvas.setAttribute('height', style_height * dpi);
       canvas.setAttribute('width', style_width * dpi);
+
+      // window.addEventListener('resize', setDimensions({ height: window.innerHeight, width: window.innerWidth }));
     }
 
+    let dandelionSeedBank = populateSeedBank(context);
+
     const renderCanvas = () => {
-      drawDandelionSeed(context);
+      context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+      for (let seed of dandelionSeedBank) {
+        seed.animate();
+      }
       animationFrameId = window.requestAnimationFrame(renderCanvas);
     };
+
     renderCanvas();
+
     return () => {
+      // window.removeEventListener('resize', setDimensions({ height: window.innerHeight, width: window.innerWidth }));
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, [drawDandelionSeed]);
+  }, [dimensions]);
 
   return <canvas id="hero-canvas" ref={canvasRef}></canvas>;
 };
