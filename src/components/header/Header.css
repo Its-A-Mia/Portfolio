@@ -3,9 +3,10 @@
     =============== */
 
 header {
+  position: relative;
   height: 96px;
-  background: rgb(202, 101, 219);
-  background: linear-gradient(180deg, rgba(202, 101, 219, 1) 0%, rgba(171, 71, 188, 1) 100%);
+  background: var(--primary-color);
+  background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color));
 }
 
 .header-container {

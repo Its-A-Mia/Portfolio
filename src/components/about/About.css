@@ -14,7 +14,7 @@
   bottom: 0;
   width: 7.375em;
   height: 30%;
-  background: #ff9a05;
+  background: var(--tertiary-color);
 }
 
 /* ===============

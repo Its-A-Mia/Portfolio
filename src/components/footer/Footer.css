@@ -3,8 +3,9 @@
     =============== */
 
 footer {
-  background: rgb(202, 101, 219);
-  background: linear-gradient(0deg, rgba(202, 101, 219, 1) 0%, rgba(171, 71, 188, 1) 100%);
+  position: relative;
+  background: var(--primary-color);
+  background: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
   height: 96px;
 }
 

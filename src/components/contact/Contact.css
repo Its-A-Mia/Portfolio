@@ -14,7 +14,7 @@
   bottom: 0;
   width: 4.725em;
   height: 30%;
-  background: #ff9a05;
+  background: var(--tertiary-color);
 }
 
 .contact-icon-container {
