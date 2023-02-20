@@ -50,5 +50,5 @@
     =============== */
 
 .skills-container {
-  grid-column: 1 / span 11;
+  grid-column: 2 / span 11;
 }

@@ -4,7 +4,7 @@ import ContactInput from './ContactInput';
 
 const Contact = () => {
   return (
-    <section className="container grid" id="contact">
+    <section className="container grid super-section" id="contact">
       <h2 className="section-title contact-title">Contact Me</h2>
 
       <div className="contact-input-container">

@@ -3,10 +3,10 @@ import SkillsCard from './SkillsCard';
 const Skills = () => {
   return (
     <div className="container grid-autofit skills-container">
-      <SkillsCard />
-      <SkillsCard />
-      <SkillsCard />
-      <SkillsCard />
+      <SkillsCard skillType={'frontend'} />
+      <SkillsCard skillType={'backend'} />
+      <SkillsCard skillType={'tools'} />
+      <SkillsCard skillType={'design'} />
     </div>
   );
 };

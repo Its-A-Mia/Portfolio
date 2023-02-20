@@ -8,9 +8,9 @@ const SendMessageIcon = () => {
       <path
         d="M158.185 5L5 56.0618L78.401 84.7842M158.185 5L107.123 158.185L78.401 84.7842M158.185 5L78.401 84.7842"
         stroke="black"
-        stroke-width="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
