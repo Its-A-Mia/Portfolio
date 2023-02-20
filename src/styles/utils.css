@@ -74,9 +74,12 @@
       Custom Borders
     =================== */
 
+.golden-border {
+  --golden-border-height: 1rem;
+  --golden-border-ovals-height: 1rem;
+}
+
 .golden-border-top {
-  --golden-border-height: 2rem;
-  --golden-border-ovals-height: 0.75rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -112,6 +115,28 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2rem;
+  height: var(--golden-border-height);
+  background: var(--tertiary-color);
+}
+
+.golden-border-bottom::before {
+  content: '';
+  position: absolute;
+  bottom: calc(var(--golden-border-ovals-height) / -2);
+  left: 0;
+  width: 100%;
+  border-radius: 100%;
+  height: var(--golden-border-ovals-height);
+  background: var(--bg-primary);
+}
+
+.golden-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: calc(var(--golden-border-height) - (var(--golden-border-ovals-height) / 2));
+  left: 0;
+  width: 100%;
+  border-radius: 100%;
+  height: var(--golden-border-ovals-height);
   background: var(--tertiary-color);
 }

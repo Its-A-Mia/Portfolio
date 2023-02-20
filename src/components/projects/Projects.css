@@ -4,7 +4,6 @@
 
 .projects {
   background: var(--primary-color);
-  z-index: -1;
   background: linear-gradient(0deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   color: var(--bg-primary);
 }
