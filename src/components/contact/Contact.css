@@ -20,7 +20,7 @@
 .contact-icon-container {
   justify-self: center;
   align-self: center;
-  grid-column: 7 / span 3;
+  grid-column: 7 / span 5;
 }
 
 .contact-input-container {
@@ -31,9 +31,6 @@
 /* ===============
       ContactInput
     =============== */
-
-.contact-input-label {
-}
 
 /* ===============
         Icon
