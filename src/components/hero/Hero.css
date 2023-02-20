@@ -25,6 +25,7 @@
 
 .hero-illustration-container {
   grid-column: 2 / span 5;
+  z-index: 0;
   position: relative;
   margin: auto auto;
 }
@@ -48,5 +49,6 @@
 
 .hero-greeting-container {
   margin: auto 0;
+  background: rgba(247, 247, 247, 0.5);
   grid-column: 7 / span 6;
 }

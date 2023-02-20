@@ -8,10 +8,6 @@ import { useRef, useEffect, useState } from 'React';
 
 const HeroCanvas = () => {
   const canvasRef = useRef(null);
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
 
   // variant bank
   // draw bank -- x, y, seed variant
@@ -24,7 +20,7 @@ const HeroCanvas = () => {
     const dandelion_seed = new Image();
     dandelion_seed.src = variantSrc;
 
-    this.dx = Math.random() * 0.3 + 0.01;
+    this.dx = Math.random() * 1.3 + 0.05;
     this.dy;
 
     this.draw = function () {
@@ -32,6 +28,14 @@ const HeroCanvas = () => {
     };
 
     this.animate = function () {
+      if (this.dx > 0.4) {
+        this.dx -= 0.0002;
+      }
+
+      if (this.x > ctx.canvas.width) {
+        this.x = -30;
+      }
+
       this.x += this.dx;
 
       this.draw();
@@ -42,8 +46,8 @@ const HeroCanvas = () => {
 
   const populateSeedBank = (ctx) => {
     let tempSeedBank = [];
-    for (let seed = 0; seed < 50; seed++) {
-      let x = -50;
+    for (let seed = 0; seed < 150; seed++) {
+      let x = Math.floor(Math.random() * -500) - 30;
       let y = Math.floor(Math.random() * (ctx.canvas.height - 50));
       let variantSrc = dandelionSeedVariantSources[Math.floor(Math.random() * 5)];
       tempSeedBank.push(new dandelionSeed(x, y, variantSrc, ctx));
@@ -68,8 +72,6 @@ const HeroCanvas = () => {
       //scale the canvas
       canvas.setAttribute('height', style_height * dpi);
       canvas.setAttribute('width', style_width * dpi);
-
-      // window.addEventListener('resize', setDimensions({ height: window.innerHeight, width: window.innerWidth }));
     }
 
     let dandelionSeedBank = populateSeedBank(context);
@@ -85,10 +87,9 @@ const HeroCanvas = () => {
     renderCanvas();
 
     return () => {
-      // window.removeEventListener('resize', setDimensions({ height: window.innerHeight, width: window.innerWidth }));
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, [dimensions]);
+  }, []);
 
   return <canvas id="hero-canvas" ref={canvasRef}></canvas>;
 };
