@@ -2,6 +2,15 @@
          Classes
     =================== */
 
+.flip-horizontally {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  filter: fliph;
+}
+
 /* ===================
         Containers
     =================== */
@@ -121,12 +130,6 @@
   bottom: -125px;
   left: 90px;
   rotate: 90deg;
-  -moz-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  transform: scaleX(-1);
-  -ms-filter: fliph;
-  filter: fliph;
 }
 
 @media (max-width: 1080px) {

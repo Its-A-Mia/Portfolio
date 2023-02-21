@@ -33,6 +33,10 @@
   width: 210px;
 }
 
+#bee-icon {
+  width: 74px;
+}
+
 @media (max-width: 1080px) {
   .html-web-icon {
     width: 170px;

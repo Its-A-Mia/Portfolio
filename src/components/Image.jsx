@@ -10,7 +10,7 @@ const Image = ({ className, src, alt }) => {
       <div className="image-vine-left">
         <Vine />
       </div>
-      <div className="image-vine-bottom">
+      <div className="image-vine-bottom flip-horizontally">
         <Vine />
       </div>
       <img className={className} src={src} alt={alt} />

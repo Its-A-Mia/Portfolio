@@ -7,6 +7,51 @@
   height: 40em;
 }
 
+.hero-bee-primary-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 11%;
+}
+
+.hero-bee-primary {
+  align-self: flex-start;
+}
+
+.hero-bee-primary-line {
+  padding-top: 40px;
+  width: 45%;
+}
+
+.hero-bee-secondary-container {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  width: 100%;
+  bottom: -24%;
+  z-index: 1;
+}
+
+.hero-bee-secondary {
+  align-self: flex-end;
+  rotate: 35deg;
+}
+
+.hero-bee-secondary-line {
+  width: 45%;
+}
+
+@media (min-width: 3840px) {
+  .hero-bee-primary-line {
+    padding-top: 31px;
+    width: 47%;
+  }
+
+  .hero-bee-secondary {
+    padding-bottom: 12px;
+  }
+}
+
 @media (max-width: 1080px) {
   .hero {
     position: relative;
