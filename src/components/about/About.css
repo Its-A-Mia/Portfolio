@@ -67,6 +67,26 @@
   margin-bottom: 0.25em;
 }
 
+.bio-strengths-list-anchor {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.bio-strengths-list-anchor::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  width: 15px;
+  height: 20%;
+  background: var(--accent-color);
+  transition: all 200ms;
+}
+
+.bio-strengths-list-anchor:hover::before {
+  width: 90%;
+}
+
 @media (max-width: 1080px) {
   .bio-container {
     grid-column: 1 / span 9;

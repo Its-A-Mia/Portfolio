@@ -35,14 +35,14 @@ nav {
   position: absolute;
   left: 3px;
   bottom: 0;
-  width: 0%;
+  width: 15px;
   height: 20%;
   background: var(--tertiary-color);
   transition: all 200ms;
 }
 
 .nav-link:hover::before {
-  width: 70%;
+  width: 90%;
 }
 
 @media (max-width: 1080px) {

@@ -29,19 +29,49 @@ const AboutBio = () => {
         <h3 className="bio-strengths-title">Clifton Strengths</h3>
         <ul className="bio-strengths-list">
           <li>
-            <p>Restorative</p>
+            <a
+              className="bio-strengths-list-anchor"
+              href="https://www.gallup.com/cliftonstrengths/en/252323/restorative-theme.aspx"
+              target="_blank"
+            >
+              Restorative
+            </a>
           </li>
           <li>
-            <p>Achiever</p>
+            <a
+              className="bio-strengths-list-anchor"
+              href="https://www.gallup.com/cliftonstrengths/en/252134/achiever-theme.aspx"
+              target="_blank"
+            >
+              Achiever
+            </a>
           </li>
           <li>
-            <p>Learner</p>
+            <a
+              className="bio-strengths-list-anchor"
+              href="https://www.gallup.com/cliftonstrengths/en/252134/learner-theme.aspx"
+              target="_blank"
+            >
+              Learner
+            </a>
           </li>
           <li>
-            <p>Ideation</p>
+            <a
+              className="bio-strengths-list-anchor"
+              href="https://www.gallup.com/cliftonstrengths/en/252134/ideation-theme.aspx"
+              target="_blank"
+            >
+              Ideation
+            </a>
           </li>
           <li>
-            <p>Intellection</p>
+            <a
+              className="bio-strengths-list-anchor"
+              href="https://www.gallup.com/cliftonstrengths/en/252134/intellection-theme.aspx"
+              target="_blank"
+            >
+              Intellection
+            </a>
           </li>
         </ul>
       </div>
