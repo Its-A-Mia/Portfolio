@@ -7,25 +7,33 @@ const ProjectsNav = ({ activeProject, setActiveProject }) => {
 
   return (
     <ul className="projects-nav">
-      <li className="projects-nav-item" id={activeProject === 'eShop' && 'projects-nav-active'}>
-        <button className="projects-nav-button" onClick={() => handleClick('eShop')}>
-          eShop
-        </button>
+      <li
+        className="projects-nav-item"
+        id={activeProject === 'eShop' && 'projects-nav-active'}
+        onClick={() => handleClick('eShop')}
+      >
+        <button className="projects-nav-button">eShop</button>
       </li>
-      <li className="projects-nav-item" id={activeProject === 'sunsetSurfer' && 'projects-nav-active'}>
-        <button className="projects-nav-button" onClick={() => handleClick('sunsetSurfer')}>
-          Sunset Surfer
-        </button>
+      <li
+        className="projects-nav-item"
+        id={activeProject === 'sunsetSurfer' && 'projects-nav-active'}
+        onClick={() => handleClick('sunsetSurfer')}
+      >
+        <button className="projects-nav-button">Sunset Surfer</button>
       </li>
-      <li className="projects-nav-item" id={activeProject === 'portfolio' && 'projects-nav-active'}>
-        <button className="projects-nav-button" onClick={() => handleClick('portfolio')}>
-          Portfolio
-        </button>
+      <li
+        className="projects-nav-item"
+        id={activeProject === 'portfolio' && 'projects-nav-active'}
+        onClick={() => handleClick('portfolio')}
+      >
+        <button className="projects-nav-button">Portfolio</button>
       </li>
-      <li className="projects-nav-item" id={activeProject === 'comingSoon' && 'projects-nav-active'}>
-        <button className="projects-nav-button" onClick={() => handleClick('comingSoon')}>
-          Coming Soon
-        </button>
+      <li
+        className="projects-nav-item"
+        id={activeProject === 'comingSoon' && 'projects-nav-active'}
+        onClick={() => handleClick('comingSoon')}
+      >
+        <button className="projects-nav-button">Coming Soon</button>
       </li>
     </ul>
   );

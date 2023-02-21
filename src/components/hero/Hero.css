@@ -162,5 +162,6 @@
 @media (max-width: 768px) {
   .hero-greeting-container {
     grid-column: 1 / span 4;
+    margin: auto auto;
   }
 }

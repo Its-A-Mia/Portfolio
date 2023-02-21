@@ -6,7 +6,7 @@
   background: var(--primary-color);
   background: linear-gradient(0deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   color: var(--bg-primary);
-  min-height: 776px;
+  min-height: 780px;
 }
 
 .projects-title {
@@ -36,7 +36,7 @@
 
 .projects-nav {
   grid-column: 1 / span 13;
-  margin: 2em 0 2em 0;
+  margin: 2em 0 0.75em 0;
   display: flex;
   justify-content: center;
 }
@@ -100,6 +100,7 @@
 }
 
 .projects-card-content-title {
+  font-weight: 700;
   padding-right: 0.5em;
   padding-bottom: 1em;
 }
@@ -120,6 +121,7 @@
 
 .projects-card-content-subtext {
   color: var(--tertiary-color);
+  text-shadow: 0 4px 8px black;
   font-weight: 700;
   padding: 0 0.5em;
 }
@@ -165,9 +167,7 @@
   }
 
   .projects-card-content-subtext-container {
-    display: flex;
     justify-content: center;
-    padding: 2em 0;
   }
 
   .projects-card-content {
