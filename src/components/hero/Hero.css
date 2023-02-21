@@ -7,6 +7,13 @@
   height: 40em;
 }
 
+@media (max-width: 1080px) {
+  .hero {
+    position: relative;
+    height: 30em;
+  }
+}
+
 /* ===============
       HeroCanvas
     =============== */
@@ -43,6 +50,12 @@
   left: -75px;
 }
 
+@media (max-width: 1080px) {
+  .hero-illustration-container {
+    grid-column: 2 / span 3;
+  }
+}
+
 /* ===============
     HeroGreeting
     =============== */
@@ -51,4 +64,10 @@
   margin: auto 0;
   background: rgba(247, 247, 247, 0.5);
   grid-column: 7 / span 6;
+}
+
+@media (max-width: 1080px) {
+  .hero-greeting-container {
+    grid-column: 5 / span 3;
+  }
 }

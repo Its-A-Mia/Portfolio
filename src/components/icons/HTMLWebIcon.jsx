@@ -1,6 +1,6 @@
 const HTMLWebIcon = () => {
   return (
-    <svg width="210" height="201" viewBox="0 0 210 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="html-web-icon" viewBox="0 0 210 201" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M105.626 114.19C86.2063 115.357 59.2185 114.229 42.4725 118.522C34.5225 120.555 32.5627 124.501 31.2811 127.763L31.3061 118.629C31.3061 117.458 31.4168 116.184 33.5265 115.289C36.1361 114.186 40.7162 114.1 44.75 114.104C64.5554 114.107 86.2135 113.334 105.626 114.19Z"
         fill="#F8BBD0"

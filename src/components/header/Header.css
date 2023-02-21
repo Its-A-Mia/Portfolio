@@ -45,6 +45,12 @@ nav {
   width: 70%;
 }
 
+@media (max-width: 1080px) {
+  nav {
+    grid-column: 7;
+  }
+}
+
 /* ===============
         logo
     =============== */

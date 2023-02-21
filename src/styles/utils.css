@@ -29,6 +29,14 @@
   padding: 10rem 0;
 }
 
+@media (max-width: 1080px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+  }
+}
+
 /* ===================
         Typography
     =================== */

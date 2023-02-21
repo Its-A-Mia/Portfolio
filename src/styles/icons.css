@@ -28,3 +28,21 @@
 .vine-icon {
   width: 31px;
 }
+
+.html-web-icon {
+  width: 210px;
+}
+
+@media (max-width: 1080px) {
+  .html-web-icon {
+    width: 170px;
+  }
+
+  .flower-variant-one {
+    width: 90px;
+  }
+
+  #flower-variant-two {
+    width: 90px;
+  }
+}
