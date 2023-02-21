@@ -52,7 +52,7 @@
 }
 
 .bio-strengths-container {
-  grid-column: 10 / span 3;
+  grid-column: 10 / span 2;
   border-left: solid var(--secondary-color) 3px;
   border-radius: 5px;
   padding-left: 3em;
@@ -137,12 +137,11 @@
     =============== */
 
 .skills-container {
-  grid-column: 2 / span 9;
+  grid-column: 2 / span 8;
 }
 
 .skill-card-container {
   position: relative;
-  /* width: 200px; */
   box-shadow: 0 0 8px black;
   padding: 1em;
   border-radius: 5px;

@@ -30,7 +30,7 @@
 
 .grid-autofit {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
@@ -136,12 +136,6 @@
   .image-flower {
     bottom: -53px;
     left: -51px;
-  }
-
-  .image-vine-left {
-  }
-
-  .image-vine-bottom {
   }
 }
 
