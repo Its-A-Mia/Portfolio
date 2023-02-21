@@ -57,6 +57,10 @@
   color: white;
 }
 
+#projects-nav-active {
+  border-bottom: solid var(--tertiary-color);
+}
+
 /* ===============
       ProjectsCard
     =============== */
