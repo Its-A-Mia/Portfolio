@@ -80,12 +80,14 @@ const ProjectsCard = ({ activeProject }) => {
         <p className="projects-card-content-text">{projects[activeProject].description}</p>
         <div className="projects-card-content-subtext-container">
           {projects[activeProject].techStack.map((stack) => (
-            <p className="projects-card-content-subtext">{stack}</p>
+            <p className="projects-card-content-subtext" key={stack}>
+              {stack}
+            </p>
           ))}
         </div>
         <div className="projects-card-content-btn-container">
           {projects[activeProject].urls.map((url) => (
-            <a role="button" className="projects-card-content-btn" href={url.url} target="blank">
+            <a role="button" className="projects-card-content-btn" key={url.type} href={url.url} target="blank">
               {url.type}
             </a>
           ))}
