@@ -6,7 +6,7 @@
   background: var(--tertiary-color);
   padding: 1em 0.5em;
   border-radius: 0 5px 5px 0;
-  animation: socials-on-load 1000ms;
+  animation: socials-on-load 2000ms;
 }
 
 .socials-github-link:hover .github-icon {
@@ -22,7 +22,17 @@
     left: -46px;
   }
 
+  50% {
+    left: -46px;
+  }
+
   100% {
     left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .socials-container {
+    display: none;
   }
 }

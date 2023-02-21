@@ -11,7 +11,24 @@ footer {
 
 .footer-container {
   display: flex;
+  padding-top: 1.5em;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.footer-socials-container {
+  display: flex;
+  gap: 1em;
+}
+
+.footer-link {
+  padding: 0;
+}
+
+@media (min-width: 769px) {
+  .footer-socials-container {
+    display: none;
+  }
 }
