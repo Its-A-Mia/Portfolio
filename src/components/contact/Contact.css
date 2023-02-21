@@ -28,6 +28,21 @@
   grid-column: 2 / span 5;
 }
 
+@media (max-width: 768px) {
+  .contact-title {
+    grid-column: 1 / span 5;
+  }
+
+  .contact-input-container {
+    padding: 3em 0;
+    grid-column: 1 / span 5;
+  }
+
+  .contact-icon-container {
+    display: none;
+  }
+}
+
 /* ===============
       ContactInput
     =============== */

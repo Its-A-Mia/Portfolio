@@ -83,11 +83,13 @@ const ProjectsCard = ({ activeProject }) => {
             <p className="projects-card-content-subtext">{stack}</p>
           ))}
         </div>
-        {projects[activeProject].urls.map((url) => (
-          <a role="button" className="projects-card-content-btn" href={url.url} target="blank">
-            {url.type}
-          </a>
-        ))}
+        <div className="projects-card-content-btn-container">
+          {projects[activeProject].urls.map((url) => (
+            <a role="button" className="projects-card-content-btn" href={url.url} target="blank">
+              {url.type}
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
