@@ -37,6 +37,21 @@
   width: 74px;
 }
 
+.github-icon {
+  width: 30px;
+  display: block;
+  padding-bottom: 1em;
+  fill: var(--bg-primary);
+  transition: all 200ms;
+}
+
+.linked-in-icon {
+  width: 30px;
+  display: block;
+  fill: var(--bg-primary);
+  transition: all 200ms;
+}
+
 @media (max-width: 1080px) {
   .html-web-icon {
     width: 170px;

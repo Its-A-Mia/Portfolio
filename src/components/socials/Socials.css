@@ -1,0 +1,28 @@
+.socials-container {
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  top: 45%;
+  background: var(--tertiary-color);
+  padding: 1em 0.5em;
+  border-radius: 0 5px 5px 0;
+  animation: socials-on-load 1000ms;
+}
+
+.socials-github-link:hover .github-icon {
+  fill: var(--dark);
+}
+
+.socials-linked-in-link:hover .linked-in-icon {
+  fill: var(--dark);
+}
+
+@keyframes socials-on-load {
+  0% {
+    left: -46px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
