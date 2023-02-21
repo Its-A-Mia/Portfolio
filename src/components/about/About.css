@@ -17,6 +17,12 @@
   background: var(--tertiary-color);
 }
 
+@media (max-width: 768px) {
+  .about-title {
+    grid-column: 1 / span 5;
+  }
+}
+
 /* ===============
         AboutBio
     =============== */
@@ -53,6 +59,23 @@
   .bio-image-container {
     grid-column: 2 / span 2;
     grid-row: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-container {
+    grid-column: 1 / span 5;
+  }
+
+  .bio-image-container {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+  }
+
+  .bio-text-container {
+    padding-top: 2.5em;
+    grid-column: 1 / span 5;
+    grid-row: 2;
   }
 }
 
@@ -102,5 +125,11 @@
 @media (max-width: 1080px) {
   .skills-container {
     grid-column: 2 / span 8;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-column: 1 / span 5;
   }
 }
