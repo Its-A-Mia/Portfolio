@@ -119,15 +119,15 @@
 .image-vine-left {
   position: absolute;
   rotate: 25deg;
-  bottom: -7px;
-  left: -30px;
+  bottom: -4px;
+  left: -28px;
   rotate: 0deg;
 }
 
 .image-vine-bottom {
   position: absolute;
   rotate: 25deg;
-  bottom: -125px;
+  bottom: -100px;
   left: 90px;
   rotate: 90deg;
 }
