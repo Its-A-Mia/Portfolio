@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="container footer-container">
         <div className="golden-border golden-border-top"></div>
-        <h4>Designed & Built by Mia Purdun</h4>
+        <p>Designed & Built by Mia Purdun</p>
       </div>
     </footer>
   );

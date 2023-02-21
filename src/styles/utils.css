@@ -37,6 +37,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
 /* ===================
         Typography
     =================== */
