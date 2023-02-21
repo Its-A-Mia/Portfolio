@@ -81,6 +81,6 @@
 
 @media (max-width: 1080px) {
   .hero-greeting-container {
-    grid-column: 5 / span 3;
+    grid-column: 5 / span 4;
   }
 }

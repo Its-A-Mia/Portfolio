@@ -40,6 +40,12 @@ button:hover {
   color: var(--bg-primary);
 }
 
+@media (max-width: 1080px) {
+  button {
+    font-size: 0.825rem;
+  }
+}
+
 /* ===================
         Typography
     =================== */
@@ -83,7 +89,7 @@ a {
   }
 
   h2 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -92,6 +98,18 @@ a {
 
   h4 {
     font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+  }
+
+  a {
+    font-size: 0.875rem;
+    font-family: 'Antic', sans-serif;
+    cursor: pointer;
   }
 }
 
