@@ -38,7 +38,7 @@
 }
 
 .bio-text-container {
-  grid-column: 4 / span 8;
+  grid-column: 4 / span 6;
   grid-row: 1;
 }
 
@@ -51,6 +51,22 @@
   padding-bottom: 2em;
 }
 
+.bio-strengths-container {
+  grid-column: 10 / span 3;
+  border-left: solid var(--secondary-color) 3px;
+  border-radius: 5px;
+  padding-left: 3em;
+  margin: 0 auto;
+}
+
+.bio-strengths-title {
+  color: var(--bg-primary);
+  background: var(--secondary-color);
+  border-radius: 5px;
+  padding: 0.325em 0.5em;
+  margin-bottom: 0.25em;
+}
+
 @media (max-width: 1080px) {
   .bio-container {
     grid-column: 1 / span 9;
@@ -59,6 +75,26 @@
   .bio-image-container {
     grid-column: 2 / span 2;
     grid-row: 1;
+  }
+
+  .bio-strengths-container {
+    display: flex;
+    align-self: flex-end;
+    grid-column: 4 / span 6;
+    align-items: start;
+    border: none;
+    padding: 0;
+  }
+
+  .bio-strengths-title {
+    margin-right: 0.5em;
+    white-space: nowrap;
+  }
+
+  .bio-strengths-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0em 0.75em;
   }
 }
 
@@ -77,6 +113,22 @@
     padding-top: 2.5em;
     grid-column: 1 / span 5;
     grid-row: 2;
+  }
+
+  .bio-strengths-container {
+    grid-column: 1 / span 4;
+    display: inline;
+  }
+
+  .bio-strengths-title {
+    margin-right: 0.5em;
+    white-space: nowrap;
+  }
+
+  .bio-strengths-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0em 0.75em;
   }
 }
 

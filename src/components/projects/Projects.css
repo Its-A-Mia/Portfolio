@@ -97,6 +97,7 @@
   grid-column: 7 / span 5;
   grid-row: 1;
   z-index: 2;
+  border-radius: 5px;
 }
 
 .projects-card-content-title {
@@ -118,13 +119,13 @@
   justify-content: end;
   gap: 0.5em;
   flex-wrap: wrap;
-  padding: 2em 0;
+  margin: 2em 0;
 }
 
 .projects-card-content-subtext {
   color: var(--tertiary-color);
   white-space: nowrap;
-  text-shadow: 0 4px 8px black;
+  border-radius: 2px;
   font-weight: 700;
   padding: 0 0.5em;
 }

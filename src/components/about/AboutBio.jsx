@@ -25,6 +25,26 @@ const AboutBio = () => {
           interested in collaborating, don't hesitate to reach out - I'm always up for a chat!
         </p>
       </div>
+      <div className="bio-strengths-container">
+        <h3 className="bio-strengths-title">Clifton Strengths</h3>
+        <ul className="bio-strengths-list">
+          <li>
+            <p>Restorative</p>
+          </li>
+          <li>
+            <p>Achiever</p>
+          </li>
+          <li>
+            <p>Learner</p>
+          </li>
+          <li>
+            <p>Ideation</p>
+          </li>
+          <li>
+            <p>Intellection</p>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
