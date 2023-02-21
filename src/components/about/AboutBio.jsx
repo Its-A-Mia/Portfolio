@@ -1,13 +1,12 @@
 import bioImage from '../../assets/bioImage.webp';
+import Image from '../Image';
 import Skills from './Skills';
 
 const AboutBio = () => {
   return (
     <div className="bio-container grid">
       <div className="bio-image-container">
-        <div className="image-border">
-          <img className="bio-image" alt="a full-body shot of myself, Mia Purdun" src={bioImage}></img>
-        </div>
+        <Image className="bio-image" alt="a full-body shot of myself, Mia Purdun" src={bioImage} />
       </div>
       <div className="bio-text-container">
         <p className="bio-text">
