@@ -11,7 +11,7 @@ const ProjectsCard = ({ activeProject }) => {
       alt: 'A screenshot of a website with a sunset in purple hues and a black grid tilted on a 3d plane.',
       description:
         'A react based app in which you click through checkboxes and race against your best time, all while enjoying a vaporwave aesthetic. Hosted on Git Pages.',
-      techStack: ['React', 'JavaScript', 'HTML', 'CSS', 'Git Pages'],
+      techStack: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Git Pages'],
       urls: [
         {
           type: 'Demo',
@@ -59,8 +59,9 @@ const ProjectsCard = ({ activeProject }) => {
       title: 'Project DTS',
       imgSrc: comingSoonImg,
       alt: 'The world if I was hired.',
-      description: 'I am currently working on a website for a tennis racket stringing company.',
-      techStack: ['React.js'],
+      description:
+        'I am currently building a website for a tennis racket stringing company using React.js and TypeScript. This will eventually feature a custom design system and interactive 3D elements.',
+      techStack: ['React.js', 'TypeScript', 'Emotion', 'Storybook'],
       urls: [
         {
           type: 'More Info',
