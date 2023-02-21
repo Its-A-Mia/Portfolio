@@ -17,6 +17,14 @@
   width: 140px;
 }
 
-.flower-variant-two {
+#flower-variant-two {
   width: 140px;
+}
+
+.flower-icon {
+  width: 100%;
+}
+
+.vine-icon {
+  width: 31px;
 }

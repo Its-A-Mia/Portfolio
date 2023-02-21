@@ -80,6 +80,35 @@
   bottom: -5px;
 }
 
+.image-flower {
+  position: absolute;
+  rotate: 25deg;
+  bottom: -78px;
+  left: -80px;
+}
+
+.image-vine-left {
+  position: absolute;
+  rotate: 25deg;
+  bottom: -7px;
+  left: -30px;
+  rotate: 0deg;
+}
+
+.image-vine-bottom {
+  position: absolute;
+  rotate: 25deg;
+  bottom: -125px;
+  left: 90px;
+  rotate: 90deg;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph;
+  filter: fliph;
+}
+
 /* ===================
       Custom Borders
     =================== */

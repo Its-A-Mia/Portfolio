@@ -1,6 +1,7 @@
 import sunsetSurferImg from '../../assets/SunsetSurfer.webp';
 import eShopImg from '../../assets/eShop.webp';
 import comingSoonImg from '../../assets/theWorldIf.webp';
+import Image from '../Image';
 
 const ProjectsCard = ({ activeProject }) => {
   const projects = {
@@ -72,13 +73,7 @@ const ProjectsCard = ({ activeProject }) => {
   return (
     <div className="projects-card grid">
       <div className="projects-card-image-container">
-        <div className="image-border">
-          <img
-            className="projects-card-image"
-            src={projects[activeProject].imgSrc}
-            alt={projects[activeProject].alt}
-          ></img>
-        </div>
+        <Image className="projects-card-image" src={projects[activeProject].imgSrc} alt={projects[activeProject].alt} />
       </div>
       <div className="projects-card-content">
         <h3 className="projects-card-content-title">{projects[activeProject].title}</h3>
