@@ -117,6 +117,23 @@
   filter: fliph;
 }
 
+@media (max-width: 1080px) {
+  .image-flower {
+    bottom: -53px;
+    left: -51px;
+  }
+
+  .image-vine-left {
+    bottom: -7px;
+    left: -21px;
+  }
+
+  .image-vine-bottom {
+    bottom: -87px;
+    left: 64px;
+  }
+}
+
 /* ===================
       Custom Borders
     =================== */
