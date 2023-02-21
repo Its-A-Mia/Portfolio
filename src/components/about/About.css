@@ -45,6 +45,17 @@
   padding-bottom: 2em;
 }
 
+@media (max-width: 1080px) {
+  .bio-container {
+    grid-column: 1 / span 9;
+  }
+
+  .bio-image-container {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+}
+
 /* ===============
         Skills
     =============== */
@@ -86,4 +97,10 @@
 
 .skill-card-list {
   list-style: inside;
+}
+
+@media (max-width: 1080px) {
+  .skills-container {
+    grid-column: 2 / span 8;
+  }
 }
