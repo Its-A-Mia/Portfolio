@@ -54,6 +54,19 @@
   .hero-illustration-container {
     grid-column: 2 / span 3;
   }
+
+  .hero-illustration-flower-one {
+    position: absolute;
+    top: -30px;
+    right: -50px;
+    z-index: -1;
+  }
+
+  .hero-illustration-flower-two {
+    position: absolute;
+    bottom: -50px;
+    left: -45px;
+  }
 }
 
 /* ===============
