@@ -4,7 +4,7 @@ import variantThree from '../../assets/dandelion-seed-var-3.svg';
 import variantFour from '../../assets/dandelion-seed-var-4.svg';
 import variantFive from '../../assets/dandelion-seed-var-5.svg';
 
-import { useRef, useEffect, useState } from 'React';
+import { useRef, useEffect, useState } from 'react';
 
 const HeroCanvas = () => {
   const canvasRef = useRef(null);

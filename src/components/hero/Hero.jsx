@@ -7,7 +7,7 @@ import BeeIcon from '../icons/BeeIcon';
 const Hero = () => {
   return (
     <div className="hero">
-      <div className="hero-bee-primary-container">
+      {/* <div className="hero-bee-primary-container">
         <svg className="hero-bee-primary-line" viewBox="0 0 926 107" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             className="hero-bee-primary-line"
@@ -33,7 +33,7 @@ const Hero = () => {
         <HeroIllustration />
         <HeroGreeting />
       </div>
-      <HeroCanvas />
+      <HeroCanvas /> */}
     </div>
   );
 };
