@@ -42,6 +42,21 @@ nav {
   width: 90%;
 }
 
+.nav-download-link {
+  font-family: 'Poppins', sans-serif;
+  border: solid var(--tertiary-color) 3px;
+  border-radius: 5px;
+  background: var(--tertiary-color);
+  color: black;
+  padding: 0.375em 0.875em;
+  transition: all 200ms;
+}
+
+.nav-download-link:hover {
+  color: var(--bg-primary);
+  background: var(--dark);
+}
+
 @media (max-width: 768px) {
   .nav-link {
     display: block;
@@ -59,6 +74,7 @@ nav {
 .nav-desktop-tablet {
   grid-column: 11;
   display: flex;
+  align-items: center;
   gap: 64px;
 }
 
@@ -108,10 +124,13 @@ nav {
   background: var(--secondary-color);
 }
 
-.close-icon {
+.nav-mobile-close-button {
   grid-column: 2;
   top: 2.5em;
   right: 2.5em;
+  background: none;
+  padding: 0;
+  border: none;
   position: absolute;
 }
 
@@ -121,6 +140,11 @@ nav {
   padding: 0;
   border: none;
   grid-column: 4;
+}
+
+.nav-mobile-close-button:hover,
+.nav-mobile-hamburger-button:hover {
+  background: none;
 }
 
 @media (max-width: 768px) {

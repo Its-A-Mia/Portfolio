@@ -136,7 +136,7 @@
   font-family: 'Poppins', sans-serif;
   color: black;
   background: var(--tertiary-color);
-  border: solid var(--tertiary-color) 2px;
+  border: solid var(--tertiary-color) 3px;
   transition: all 200ms;
 }
 
