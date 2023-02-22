@@ -3,7 +3,7 @@ import eShopImg from '../../assets/eShop.webp';
 import comingSoonImg from '../../assets/theWorldIf.webp';
 import Image from '../Image';
 
-const ProjectsCard = ({ activeProject }) => {
+const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimationActive }) => {
   const projects = {
     sunsetSurfer: {
       title: 'Sunset Surfer',
@@ -72,7 +72,10 @@ const ProjectsCard = ({ activeProject }) => {
   };
 
   return (
-    <div className="projects-card grid">
+    <div
+      className={isSwapAnimationActive ? 'projects-card grid projects-card-animated' : 'projects-card grid'}
+      onAnimationEnd={() => setIsSwapAnimationActive(false)}
+    >
       <div className="projects-card-image-container">
         <Image className="projects-card-image" src={projects[activeProject].imgSrc} alt={projects[activeProject].alt} />
       </div>

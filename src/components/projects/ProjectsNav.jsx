@@ -1,7 +1,8 @@
-import { useRef } from 'react';
-
-const ProjectsNav = ({ activeProject, setActiveProject }) => {
+const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive }) => {
   const handleClick = (projectName) => {
+    if (projectName !== activeProject) {
+      setIsSwapAnimationActive(true);
+    }
     setActiveProject(projectName);
   };
 
