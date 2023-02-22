@@ -141,7 +141,7 @@
   color: black;
   background: var(--tertiary-color);
   border: solid var(--tertiary-color) 3px;
-  transition: all 1000ms;
+  transition: all 200ms;
 }
 
 .projects-card-content-btn-container {

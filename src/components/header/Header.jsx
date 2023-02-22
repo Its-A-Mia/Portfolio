@@ -1,9 +1,9 @@
 import './Header.css';
 import Logo from './Logo';
-import NavDesktopTablet from './NavDesktopTablet';
 import NavMobile from './NavMobile';
 import Hamburger from '../icons/Hamburger';
 import { useState } from 'react';
+import NavDesktop from './NavDesktop';
 
 const Header = () => {
   const [mobileNavIsActive, setMobileNavIsActive] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
     <header>
       <div className="container header-container grid">
         <Logo />
-        <NavDesktopTablet />
+        <NavDesktop />
         <NavMobile setMobileNavIsActive={setMobileNavIsActive} mobileNavIsActive={mobileNavIsActive} />
         <button className="nav-mobile-hamburger-button" onClick={() => handleBurgerMenuClick()}>
           <Hamburger />

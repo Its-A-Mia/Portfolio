@@ -71,7 +71,7 @@ nav {
       NavDesktop
     =============== */
 
-.nav-desktop-tablet {
+.nav-desktop {
   grid-column: 11;
   display: flex;
   align-items: center;
@@ -79,13 +79,7 @@ nav {
 }
 
 @media (max-width: 1080px) {
-  .nav-desktop-tablet {
-    grid-column: 7;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-desktop-tablet {
+  .nav-desktop {
     display: none;
   }
 }
@@ -136,10 +130,12 @@ nav {
 
 .nav-mobile-hamburger-button {
   display: none;
+  width: fit-content;
+  justify-self: center;
   background: none;
   padding: 0;
   border: none;
-  grid-column: 4;
+  grid-column: 8;
 }
 
 .nav-mobile-close-button:hover,
@@ -147,9 +143,15 @@ nav {
   background: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .nav-mobile-hamburger-button {
     display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-mobile-hamburger-button {
+    grid-column: 4;
   }
 }
 
