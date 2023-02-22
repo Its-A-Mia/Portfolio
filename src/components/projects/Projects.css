@@ -89,7 +89,7 @@
 }
 
 .projects-card-animated {
-  animation: project-content-fade-in 200ms;
+  animation: project-content-fade-in 400ms;
 }
 
 .projects-card-image-container {
