@@ -1,6 +1,6 @@
-const NavLink = ({ label, link }) => {
+const NavLink = ({ label, link, onClick }) => {
   return (
-    <a className="nav-link" href={link}>
+    <a className="nav-link" href={link} onClick={() => onClick()}>
       {label}
     </a>
   );

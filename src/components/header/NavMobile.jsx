@@ -13,9 +13,9 @@ const NavMobile = ({ mobileNavIsActive, setMobileNavIsActive }) => {
         <Close />
       </button>
       <nav className="nav-mobile">
-        <NavLink label={'Projects'} link={'#projects'} />
-        <NavLink label={'About'} link={'#about'} />
-        <NavLink label={'Contact'} link={'#contact'} />
+        <NavLink label={'Projects'} link={'#projects'} onClick={handleCloseButtonClick} />
+        <NavLink label={'About'} link={'#about'} onClick={handleCloseButtonClick} />
+        <NavLink label={'Contact'} link={'#contact'} onClick={handleCloseButtonClick} />
       </nav>
     </aside>
   );
