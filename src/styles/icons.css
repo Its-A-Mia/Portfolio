@@ -52,6 +52,14 @@
   transition: all 200ms;
 }
 
+.hamburger {
+  width: 40px;
+}
+
+.close-icon {
+  width: 25px;
+}
+
 @media (max-width: 1080px) {
   .html-web-icon {
     width: 170px;

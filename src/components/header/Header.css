@@ -19,9 +19,6 @@ header {
         Nav
     =============== */
 nav {
-  grid-column: 11;
-  display: flex;
-  gap: 64px;
   font-size: 1.125rem;
 }
 
@@ -45,9 +42,90 @@ nav {
   width: 90%;
 }
 
+@media (max-width: 768px) {
+  .nav-link {
+    display: block;
+  }
+
+  .logo {
+    grid-column: 1;
+  }
+}
+
+/* ===============
+      NavDesktop
+    =============== */
+
+.nav-desktop-tablet {
+  grid-column: 11;
+  display: flex;
+  gap: 64px;
+}
+
 @media (max-width: 1080px) {
-  nav {
+  .nav-desktop-tablet {
     grid-column: 7;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-desktop-tablet {
+    display: none;
+  }
+}
+
+/* ===============
+      NavMobile
+    =============== */
+
+.nav-mobile-container {
+  position: fixed;
+  background: rgba(51, 51, 51, 0.5);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  grid-template-columns: 0.8fr 1.2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav-mobile-container-active {
+  display: grid;
+}
+
+.nav-mobile {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10em;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);
+}
+
+.close-icon {
+  grid-column: 2;
+  top: 2.5em;
+  right: 2.5em;
+  position: absolute;
+}
+
+.nav-mobile-hamburger-button {
+  display: none;
+  background: none;
+  padding: 0;
+  border: none;
+  grid-column: 4;
+}
+
+@media (max-width: 768px) {
+  .nav-mobile-hamburger-button {
+    display: inline;
   }
 }
 
@@ -59,4 +137,10 @@ nav {
   grid-column: 2;
   font-size: 2rem;
   font-family: 'Pacifico', cursive;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    grid-column: 1;
+  }
 }
