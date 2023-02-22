@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Vine = () => {
   return (
     <svg className="vine-icon" viewBox="0 0 31 216" fill="none" xmlns="http://www.w3.org/2000/svg">

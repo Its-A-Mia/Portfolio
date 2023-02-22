@@ -1,4 +1,3 @@
-import React from 'react';
 import Close from '../icons/Close';
 import NavDownloadLink from './NavDownloadLink';
 import NavLink from './NavLink';

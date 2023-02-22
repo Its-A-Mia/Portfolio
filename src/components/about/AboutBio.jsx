@@ -1,6 +1,5 @@
 import bioImage from '../../assets/bioImage.webp';
 import Image from '../Image';
-import Skills from './Skills';
 
 const AboutBio = () => {
   return (
