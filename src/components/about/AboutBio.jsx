@@ -23,6 +23,7 @@ const AboutBio = () => {
           the ranked ladders of Rocket League, or trying out the latest local hotspots. If you have any questions or are
           interested in collaborating, don't hesitate to reach out - I'm always up for a chat!
         </p>
+        <button className="bio-text-read-more">Read more</button>
       </div>
       <div className="bio-strengths-container">
         <h3 className="bio-strengths-title">Clifton Strengths</h3>

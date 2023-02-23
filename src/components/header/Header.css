@@ -163,6 +163,11 @@ nav {
   grid-column: 2;
   font-size: 2rem;
   font-family: 'Pacifico', cursive;
+  transition: all 200ms;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

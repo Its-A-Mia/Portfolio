@@ -1,5 +1,9 @@
 const Logo = () => {
-  return <a className="logo">Mia</a>;
+  return (
+    <a className="logo" href="/">
+      Mia
+    </a>
+  );
 };
 
 export default Logo;
