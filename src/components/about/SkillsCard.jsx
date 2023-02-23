@@ -30,11 +30,13 @@ const SkillsCard = ({ skillType }) => {
 
   return (
     <div className="skill-card-container">
-      <div className="skill-card-icon-container">{getIcon()}</div>
-      <h4 className="skill-card-title">{SKILL_TITLE}</h4>
+      <div className="skill-card-title-container">
+        {getIcon()}
+        <h4 className="skill-card-title">{SKILL_TITLE}</h4>
+      </div>
       <ul className="skill-card-list" role="list">
         {skills[skillType].map((skill, i) => (
-          <li className="skill-card-list-items" key={i}>
+          <li className="skill-card-list-item" key={i}>
             {skill}
           </li>
         ))}
