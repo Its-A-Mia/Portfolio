@@ -35,10 +35,18 @@
     =============== */
 
 .projects-nav {
-  grid-column: 1 / span 13;
+  grid-column: 4 / span 6;
   margin: 2em 0 0.75em 0;
   display: flex;
   justify-content: center;
+  border-bottom: solid var(--accent-color) 3px;
+  border-radius: 5px;
+  padding: 1em 0 1em 0;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  white-space: nowrap;
+  transform: scale(1);
+  scrollbar-color: var(--tertiary-color) var(--tertiary-color);
 }
 
 .projects-nav-item {
@@ -46,10 +54,7 @@
   cursor: pointer;
   padding: 0.125em 1em;
   border-radius: 5px 5px 0 0;
-  border-top: solid transparent 3px;
-  border-right: solid transparent 3px;
-  border-left: solid transparent 3px;
-  border-bottom: solid var(--dark) 3px;
+  border: solid transparent 3px;
   transition: all 400ms;
 }
 
@@ -84,20 +89,16 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .projects-nav {
+    grid-column: 2 / span 7;
+  }
+}
+
 @media (max-width: 768px) {
   .projects-nav {
     grid-column: 1 / span 5;
-    display: flex;
-    border-top: solid var(--accent-color) 3px;
-    border-bottom: solid var(--accent-color) 3px;
-    border-radius: 5px;
-    padding: 1em 0 1em 0;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5em;
     white-space: nowrap;
-    transform: scale(1);
-    scrollbar-color: var(--tertiary-color) var(--tertiary-color);
   }
 
   .projects-nav-item {

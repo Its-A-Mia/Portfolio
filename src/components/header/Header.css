@@ -133,7 +133,7 @@ nav {
   width: fit-content;
   justify-self: center;
   background: none;
-  padding: 0;
+  padding-right: 2em;
   border: none;
   grid-column: 8;
 }
