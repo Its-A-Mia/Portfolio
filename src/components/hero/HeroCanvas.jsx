@@ -61,17 +61,14 @@ const HeroCanvas = () => {
     let animationFrameId;
 
     if (!!window) {
-      // scale the canvas so the draw isn't blurry
-      let dpi = window.devicePixelRatio;
-
       //the + prefix casts it to an integer
       //the slice method gets rid of "px" let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);//get CSS width
       let style_height = +getComputedStyle(canvas).getPropertyValue('height').slice(0, -2);
       let style_width = +getComputedStyle(canvas).getPropertyValue('width').slice(0, -2);
 
       //scale the canvas
-      canvas.setAttribute('height', style_height * dpi);
-      canvas.setAttribute('width', style_width * dpi);
+      canvas.setAttribute('height', style_height);
+      canvas.setAttribute('width', style_width);
     }
 
     let dandelionSeedBank = populateSeedBank(context);

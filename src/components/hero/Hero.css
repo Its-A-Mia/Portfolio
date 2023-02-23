@@ -177,6 +177,10 @@
   .hero-greeting-container {
     grid-column: 5 / span 4;
   }
+
+  .hero-greeting-subtitle {
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 768px) {
