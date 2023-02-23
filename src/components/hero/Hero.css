@@ -157,12 +157,12 @@
 }
 
 .hero-greeting-title {
-  animation: fade-in-left 1000ms;
+  animation: fade-in-left-delay 1000ms;
 }
 
 .hero-greeting-subtitle {
   color: var(--tertiary-color);
-  animation: fade-in-left 1500ms;
+  animation: fade-in-left-delay 1500ms;
 }
 
 .hero-greeting-mission-statement {
@@ -170,21 +170,7 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   padding-bottom: 0.25em;
-  animation: typing 4s steps(100, end);
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-
-  33% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
+  animation: typing 4s steps(150, end);
 }
 
 @media (max-width: 1080px) {

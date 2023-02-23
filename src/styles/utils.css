@@ -79,6 +79,10 @@
   position: relative;
 }
 
+.image-border-active {
+  animation: blossom 1000ms;
+}
+
 .image-border::before,
 .image-border::after {
   content: '';
@@ -106,7 +110,12 @@
   rotate: 25deg;
   bottom: -78px;
   left: -80px;
+  z-index: 1;
 }
+
+/* .image-flower-active {
+  animation: blossom 1000ms;
+} */
 
 .image-vine-left {
   position: absolute;
@@ -123,6 +132,11 @@
   left: 90px;
   rotate: 90deg;
 }
+
+/* .image-vine-bottom-active,
+.image-vine-left-active {
+  animation: fade-in-md-delay 1000ms;
+} */
 
 @media (max-width: 1080px) {
   .image-flower {
@@ -254,6 +268,18 @@
     opacity: 0;
   }
 
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes fade-in-left-delay {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
   50% {
     transform: translateX(50px);
     opacity: 0;
@@ -266,6 +292,18 @@
 }
 
 @keyframes fade-in-right {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 100;
+  }
+}
+
+@keyframes fade-in-right-delay {
   0% {
     transform: translateX(-50px);
     opacity: 0;
@@ -297,5 +335,33 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes growing {
+  0% {
+    height: 0;
+  }
+
+  33% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
   }
 }

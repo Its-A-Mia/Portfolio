@@ -72,14 +72,26 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
   };
 
   return (
-    <div
-      className={isSwapAnimationActive ? 'projects-card grid projects-card-animated' : 'projects-card grid'}
-      onAnimationEnd={() => setIsSwapAnimationActive(false)}
-    >
-      <div className="projects-card-image-container">
-        <Image className="projects-card-image" src={projects[activeProject].imgSrc} alt={projects[activeProject].alt} />
+    <div className="projects-card grid" onAnimationEnd={() => setIsSwapAnimationActive(false)}>
+      <div
+        className={
+          isSwapAnimationActive
+            ? 'projects-card-image-container projects-card-image-container-active'
+            : 'projects-card-image-container'
+        }
+      >
+        <Image
+          className="projects-card-image"
+          src={projects[activeProject].imgSrc}
+          alt={projects[activeProject].alt}
+          isSwapAnimationActive={isSwapAnimationActive}
+        />
       </div>
-      <div className="projects-card-content">
+      <div
+        className={
+          isSwapAnimationActive ? 'projects-card-content projects-card-content-active' : 'projects-card-content'
+        }
+      >
         <h3 className="projects-card-content-title">{projects[activeProject].title}</h3>
         <p className="projects-card-content-text">{projects[activeProject].description}</p>
         <div className="projects-card-content-subtext-container">

@@ -97,11 +97,19 @@
   grid-row: 1;
 }
 
+.projects-card-image-container-active {
+  animation: fade-in-right 1000ms;
+}
+
 .projects-card-content {
   grid-column: 7 / span 5;
   grid-row: 1;
   z-index: 2;
   border-radius: 5px;
+}
+
+.projects-card-content-active {
+  animation: fade-in-left 1000ms;
 }
 
 .projects-card-content-title {
