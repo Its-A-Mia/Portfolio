@@ -104,6 +104,7 @@
   z-index: 0;
   position: relative;
   margin: auto auto;
+  animation: blossom 800ms;
 }
 
 .hero-illustration-flower-one {
@@ -111,12 +112,14 @@
   top: -50px;
   right: -80px;
   z-index: -1;
+  animation: blossom 1500ms;
 }
 
 .hero-illustration-flower-two {
   position: absolute;
   bottom: -80px;
   left: -75px;
+  animation: blossom 1000ms;
 }
 
 @media (max-width: 1080px) {
@@ -151,7 +154,37 @@
   margin: auto 0;
   background: rgba(247, 247, 247, 0.5);
   grid-column: 7 / span 6;
+}
+
+.hero-greeting-title {
+  animation: fade-in-left 1000ms;
+}
+
+.hero-greeting-subtitle {
+  color: var(--tertiary-color);
   animation: fade-in-left 1500ms;
+}
+
+.hero-greeting-mission-statement {
+  font-family: 'Pacifico', cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  padding-bottom: 0.25em;
+  animation: typing 4s steps(100, end);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1080px) {
