@@ -50,11 +50,11 @@
   border-right: solid transparent 3px;
   border-left: solid transparent 3px;
   border-bottom: solid var(--dark) 3px;
-  transition: all 200ms;
+  transition: all 400ms;
 }
 
-.projects-nav-item:hover {
-  border: solid var(--tertiary-color) 3px;
+.projects-nav-item:hover .projects-nav-button {
+  color: var(--tertiary-color);
 }
 
 .projects-nav-button,
@@ -65,7 +65,23 @@
 }
 
 #projects-nav-active {
-  border: solid var(--tertiary-color);
+  animation: create-frame 1000ms forwards;
+}
+
+@keyframes create-frame {
+  0% {
+    border-right: solid var(--tertiary-color) 3px;
+  }
+
+  33% {
+    border-top: solid var(--tertiary-color) 3px;
+  }
+  66% {
+    border-left: solid var(--tertiary-color) 3px;
+  }
+  100% {
+    border-bottom: solid var(--tertiary-color) 3px;
+  }
 }
 
 @media (max-width: 768px) {
