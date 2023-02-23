@@ -7,7 +7,7 @@ import variantFive from '../../assets/dandelion-seed-var-5.svg';
 import { useRef, useEffect, useState } from 'react';
 
 const HeroCanvas = () => {
-  const canvasRef = useRef(null);
+  const canvasRef = useRef();
 
   // variant bank
   // draw bank -- x, y, seed variant

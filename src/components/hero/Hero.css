@@ -151,6 +151,7 @@
   margin: auto 0;
   background: rgba(247, 247, 247, 0.5);
   grid-column: 7 / span 6;
+  animation: fade-in-left 1500ms;
 }
 
 @media (max-width: 1080px) {
