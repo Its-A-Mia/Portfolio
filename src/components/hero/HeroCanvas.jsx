@@ -51,7 +51,7 @@ const HeroCanvas = () => {
 
   const populateSeedBank = (ctx) => {
     let tempSeedBank = [];
-    for (let seed = 0; seed < 75; seed++) {
+    for (let seed = 0; seed < 50; seed++) {
       let x = Math.floor(Math.random() * -500) - 30;
       let y = Math.floor(Math.random() * (ctx.canvas.height - 150));
       let variantSrc = dandelionSeedVariantSources[Math.floor(Math.random() * 5)];

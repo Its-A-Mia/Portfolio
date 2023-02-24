@@ -189,3 +189,22 @@
     margin: auto auto;
   }
 }
+
+/* ===============
+    HeroCallToAction
+    =============== */
+
+.hero-call-to-action {
+  position: absolute;
+  bottom: 6em;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: var(--accent-color) !important;
+  background: var(--accent-color) !important;
+  z-index: 1;
+  animation: fade-in-lg-delay 4200ms;
+}
+
+.hero-call-to-action:hover {
+  background: var(--dark) !important;
+}

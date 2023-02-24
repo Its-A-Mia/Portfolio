@@ -30,7 +30,7 @@
 }
 
 .html-web-icon {
-  width: 210px;
+  width: 190px;
 }
 
 #bee-icon {
@@ -62,7 +62,7 @@
 
 @media (max-width: 1080px) {
   .html-web-icon {
-    width: 170px;
+    width: 140px;
   }
 
   .flower-variant-one {
