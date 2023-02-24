@@ -21,7 +21,7 @@ const HeroCanvas = () => {
     dandelion_seed.src = variantSrc;
 
     this.dx = Math.random() * 1.3 + 0.05;
-    this.dy;
+    this.dy = Math.random() * 0.2 + 0.05;
 
     this.draw = function () {
       ctx.drawImage(dandelion_seed, this.x, this.y);
@@ -36,7 +36,12 @@ const HeroCanvas = () => {
         this.x = -30;
       }
 
+      if (this.y > ctx.canvas.height) {
+        this.y = -30;
+      }
+
       this.x += this.dx;
+      this.y += this.dy;
 
       this.draw();
     };
@@ -46,9 +51,9 @@ const HeroCanvas = () => {
 
   const populateSeedBank = (ctx) => {
     let tempSeedBank = [];
-    for (let seed = 0; seed < 50; seed++) {
+    for (let seed = 0; seed < 75; seed++) {
       let x = Math.floor(Math.random() * -500) - 30;
-      let y = Math.floor(Math.random() * (ctx.canvas.height - 50));
+      let y = Math.floor(Math.random() * (ctx.canvas.height - 150));
       let variantSrc = dandelionSeedVariantSources[Math.floor(Math.random() * 5)];
       tempSeedBank.push(new dandelionSeed(x, y, variantSrc, ctx));
     }

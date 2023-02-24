@@ -11,6 +11,21 @@
   filter: fliph;
 }
 
+.anchor-button {
+  padding: 0.375em 0.875em;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background: var(--tertiary-color);
+  border: solid var(--tertiary-color) 3px;
+  transition: all 200ms;
+}
+
+.anchor-button:hover {
+  background: var(--dark);
+  color: var(--bg-primary);
+}
+
 /* ===================
         Containers
     =================== */

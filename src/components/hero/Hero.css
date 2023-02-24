@@ -131,7 +131,6 @@
     position: absolute;
     top: -30px;
     right: -50px;
-    z-index: -1;
   }
 
   .hero-illustration-flower-two {
@@ -154,6 +153,7 @@
   margin: auto 0;
   background: rgba(247, 247, 247, 0.5);
   grid-column: 7 / span 6;
+  z-index: 1;
 }
 
 .hero-greeting-title {
@@ -169,7 +169,7 @@
   font-family: 'Pacifico', cursive;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  padding-bottom: 0.25em;
+  padding-bottom: 1em;
   animation: typing 4s steps(150, end);
 }
 

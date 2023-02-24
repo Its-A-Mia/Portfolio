@@ -39,7 +39,6 @@
 .projects-nav {
   grid-column: 4 / -2;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
   white-space: nowrap;
@@ -98,10 +97,14 @@
   .projects-nav {
     grid-column: 1 / span 5;
     white-space: nowrap;
+    justify-content: start;
+    gap: 0;
+    overflow: auto;
+    scrollbar-color: transparent transparent;
   }
 
   .projects-nav-item {
-    border-bottom: solid transparent 3px;
+    padding: 0;
   }
 }
 
