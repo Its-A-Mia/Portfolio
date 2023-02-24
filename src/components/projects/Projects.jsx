@@ -5,7 +5,7 @@ import ProjectsNav from './ProjectsNav';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState('eShop');
-  const [isSwapAnimationActive, setIsSwapAnimationActive] = useState(false);
+  const [isSwapAnimationActive, setIsSwapAnimationActive] = useState(true);
 
   return (
     <section className="projects super-section" id="projects">

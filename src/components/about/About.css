@@ -68,6 +68,10 @@
   padding-bottom: 2em;
 }
 
+.bio-text-middle {
+  text-align: right;
+}
+
 .bio-strengths-container {
   grid-column: 10 / span 2;
   border-left: solid var(--secondary-color) 3px;

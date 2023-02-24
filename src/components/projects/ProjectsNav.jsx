@@ -10,17 +10,17 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
     <ul className="projects-nav">
       <li
         className="projects-nav-item"
-        id={activeProject === 'eShop' && 'projects-nav-active'}
-        onClick={() => handleClick('eShop')}
-      >
-        <button className="projects-nav-button">eShop</button>
-      </li>
-      <li
-        className="projects-nav-item"
         id={activeProject === 'sunsetSurfer' && 'projects-nav-active'}
         onClick={() => handleClick('sunsetSurfer')}
       >
         <button className="projects-nav-button">Sunset Surfer</button>
+      </li>
+      <li
+        className="projects-nav-item"
+        id={activeProject === 'eShop' && 'projects-nav-active'}
+        onClick={() => handleClick('eShop')}
+      >
+        <button className="projects-nav-button">eShop</button>
       </li>
       <li
         className="projects-nav-item"
