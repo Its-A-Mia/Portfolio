@@ -4,11 +4,10 @@ const ContactInput = ({ label, type, value, setValue, name }) => {
       {label}
       {type === 'textarea' ? (
         <textarea
-          className="contact-input"
+          className="contact-input contact-textarea"
           value={value}
           name={name}
           onChange={(e) => setValue(e.target.value)}
-          style={{ resize: 'vertical', maxHeight: '500px' }}
           required
         ></textarea>
       ) : (

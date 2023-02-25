@@ -36,6 +36,12 @@
   grid-column: 2 / span 5;
 }
 
+.contact-textarea {
+  resize: vertical;
+  max-height: 500px;
+  min-height: 200px;
+}
+
 .contact-input-submit {
   background: var(--accent-color);
   border-color: var(--accent-color);
