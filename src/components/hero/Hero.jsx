@@ -33,9 +33,7 @@ const Hero = () => {
         <HeroIllustration />
         <HeroGreeting />
       </div>
-      <a className="hero-call-to-action anchor-button" href="#projects">
-        See my work
-      </a>
+
       <HeroCanvas />
     </div>
   );

@@ -195,14 +195,9 @@
     =============== */
 
 .hero-call-to-action {
-  position: absolute;
-  bottom: 6em;
-  left: 50%;
-  transform: translateX(-50%);
   border-color: var(--accent-color) !important;
   background: var(--accent-color) !important;
-  z-index: 1;
-  animation: fade-in-lg-delay 4000ms;
+  animation: fade-in-left-delay 4300ms;
 }
 
 .hero-call-to-action:hover {

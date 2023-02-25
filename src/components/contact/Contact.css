@@ -25,9 +25,9 @@
   position: absolute;
   display: flex;
   flex-wrap: nowrap;
-  width: 75%;
+  width: 78%;
   top: 31%;
-  left: 0;
+  left: -30px;
   z-index: -1;
 }
 
