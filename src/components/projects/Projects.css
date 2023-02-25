@@ -116,6 +116,7 @@
   grid-column: 1 / -1;
   column-gap: 20px;
   margin-top: 1.5em;
+  isolation: isolate;
 }
 
 .projects-card-animated {
@@ -134,7 +135,6 @@
 .projects-card-content {
   grid-column: 8 / span 4;
   grid-row: 1;
-  z-index: 2;
   border-radius: 5px;
 }
 

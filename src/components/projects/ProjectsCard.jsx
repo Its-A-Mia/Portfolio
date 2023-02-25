@@ -11,7 +11,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       imgSrc: sunsetSurferImg,
       alt: 'A screenshot of a website with a sunset in purple hues and a black grid tilted on a 3d plane.',
       description:
-        'A react based app in which you click through checkboxes and race against your best time, all while enjoying a vaporwave aesthetic. Hosted on Git Pages.',
+        'An app built using React in which you click through custom checkboxes in front of a 3D vaporwave scene. This website is hosted on Git Pages.',
       techStack: ['React.js', 'JavaScript', 'HTML', 'CSS', 'Git Pages'],
       urls: [
         {
@@ -29,8 +29,8 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       imgSrc: eShopImg,
       alt: "A screenshot of an eCommerce website, where there's a header and a section below with categories listed.",
       description:
-        'A mock eCommerce website that features frontend and backend tools such as Next.js, PostgreSQL & Prisma. This project can be spun up on a local machine using Docker.',
-      techStack: ['Next.js', 'JavaScript', 'Prisma', 'PostgreSQL', 'Docker'],
+        'An eCommerce website that features frontend and backend tools such as Next.js, PostgreSQL & Prisma. There are tests written for Jest to ensure the integrity of the code. This project can be spun up on a local machine using Docker.',
+      techStack: ['Next.js', 'JavaScript', 'Prisma', 'PostgreSQL', 'Jest', 'Docker'],
       urls: [
         {
           type: 'More Info',
@@ -47,7 +47,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       imgSrc: PortfolioImg,
       alt: 'A screenshot of a website with a sunset in purple hues and a black grid tilted on a 3d plane.',
       description:
-        'My portfolio was built using Vite and React--it features a design that utilizes more complex HTML/CSS/JavaScript techniques such as canvas. This is hosted on AWS S3 and the DNS is routed using Route 53.',
+        'The design of my portfolio first came to life in a mockup made using Figma. It is built using Vite and React. This website is hosted on AWS S3 and the DNS is routed using Route 53.',
       techStack: ['Vite', 'React.js', 'AWS S3', 'AWS Route 53', 'HTML/CSS'],
       urls: [
         {
@@ -57,11 +57,11 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       ],
     },
     comingSoon: {
-      title: 'Project DTS',
+      title: 'Denver Tennis Stringing',
       imgSrc: comingSoonImg,
-      alt: 'The world if I was hired.',
+      alt: 'The world if I was hired meme photo--a futuristic city scape with a modular house and a man walking a dog in the foreground.',
       description:
-        'I am currently building a website for a tennis racket stringing company using React.js and TypeScript. This will eventually feature a custom design system and interactive 3D elements.',
+        'I am currently building a website for a personal tennis racket stringing company using React.js and TypeScript. This will eventually feature a custom design system and interactive 3D elements.',
       techStack: ['React.js', 'TypeScript', 'Emotion', 'Storybook'],
       urls: [
         {
