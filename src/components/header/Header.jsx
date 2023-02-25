@@ -2,12 +2,9 @@ import './Header.css';
 import Logo from './Logo';
 import NavMobile from './NavMobile';
 import Hamburger from '../icons/Hamburger';
-import { useState } from 'react';
 import NavDesktop from './NavDesktop';
 
-const Header = () => {
-  const [mobileNavIsActive, setMobileNavIsActive] = useState(false);
-
+const Header = ({ mobileNavIsActive, setMobileNavIsActive }) => {
   const handleBurgerMenuClick = () => {
     setMobileNavIsActive(true);
   };
