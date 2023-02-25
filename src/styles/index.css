@@ -137,13 +137,21 @@ img {
 input,
 textarea {
   width: 100%;
-  border: solid var(--dark) 2px;
+  border: solid var(--primary-color) 2px;
   border-radius: 5px;
+  background: var(--bg-primary);
   margin-top: 0.5em;
   margin-bottom: 3em;
   padding: 0.5em 0.875em;
+  transition: border 200ms;
+}
+
+input:focus,
+textarea:focus {
+  border: solid var(--accent-color) 2px;
 }
 
 label {
-  padding-left: 1em;
+  background: var(--bg-primary);
+  margin-left: 1em;
 }

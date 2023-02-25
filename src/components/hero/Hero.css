@@ -170,7 +170,7 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   padding-bottom: 1em;
-  animation: typing 4s steps(150, end);
+  animation: typing 6s steps(300, end);
 }
 
 @media (max-width: 1080px) {
@@ -202,7 +202,7 @@
   border-color: var(--accent-color) !important;
   background: var(--accent-color) !important;
   z-index: 1;
-  animation: fade-in-lg-delay 4200ms;
+  animation: fade-in-lg-delay 4000ms;
 }
 
 .hero-call-to-action:hover {

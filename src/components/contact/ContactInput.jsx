@@ -8,7 +8,7 @@ const ContactInput = ({ label, type, value, setValue, name }) => {
           value={value}
           name={name}
           onChange={(e) => setValue(e.target.value)}
-          style={{ resize: 'vertical' }}
+          style={{ resize: 'vertical', maxHeight: '500px' }}
           required
         ></textarea>
       ) : (

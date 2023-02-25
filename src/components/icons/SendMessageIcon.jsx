@@ -1,16 +1,17 @@
 const SendMessageIcon = () => {
   return (
-    <svg className="send-message-icon" viewBox="0 0 164 164" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="send-message-icon" viewBox="0 0 1285 524" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M158.185 5L5 56.0618L78.401 84.7842M158.185 5L107.123 158.185L78.401 84.7842M158.185 5L78.401 84.7842L158.185 5Z"
-        fill="#F7F7F7"
+        d="M1178.5 224.185C1178.5 224.185 986 471.185 791.5 439.685C597 408.185 605.4 4.58493 439 102.185C231 224.185 203 317.685 25 197.185"
+        stroke="black"
+        stroke-dasharray="8 8"
       />
       <path
-        d="M158.185 5L5 56.0618L78.401 84.7842M158.185 5L107.123 158.185L78.401 84.7842M158.185 5L78.401 84.7842"
+        d="M1262.8 125L1113.6 186.729L1188.84 210.208M1262.8 125L1222.66 281.402L1188.84 210.208M1262.8 125L1188.84 210.208"
         stroke="black"
-        strokeWidth="10"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
     </svg>
   );

@@ -2,6 +2,10 @@
         Contact
     =============== */
 
+#contact {
+  position: relative;
+}
+
 .contact-title {
   grid-column: 2 / span 12;
 }
@@ -18,14 +22,30 @@
 }
 
 .contact-icon-container {
-  justify-self: center;
-  align-self: center;
-  grid-column: 7 / span 5;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 75%;
+  top: 31%;
+  left: 0;
+  z-index: -1;
 }
 
 .contact-input-container {
   padding: 3em 0;
   grid-column: 2 / span 5;
+}
+
+.contact-input-submit {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+@media (max-width: 1080px) {
+  .contact-icon-container {
+    width: 90%;
+    top: 35%;
+  }
 }
 
 @media (max-width: 768px) {

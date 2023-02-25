@@ -1,6 +1,7 @@
 import sunsetSurferImg from '../../assets/SunsetSurfer.webp';
 import eShopImg from '../../assets/eShop.webp';
 import comingSoonImg from '../../assets/theWorldIf.webp';
+import PortfolioImg from '../../assets/Portfolio.webp';
 import Image from '../Image';
 
 const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimationActive }) => {
@@ -43,7 +44,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
     },
     portfolio: {
       title: 'Portfolio',
-      imgSrc: eShopImg,
+      imgSrc: PortfolioImg,
       alt: 'A screenshot of a website with a sunset in purple hues and a black grid tilted on a 3d plane.',
       description:
         'My portfolio was built using Vite and React--it features a design that utilizes more complex HTML/CSS/JavaScript techniques such as canvas. This is hosted on AWS S3 and the DNS is routed using Route 53.',
