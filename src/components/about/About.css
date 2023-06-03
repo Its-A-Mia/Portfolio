@@ -80,12 +80,20 @@
   margin: 0 auto;
 }
 
+.bio-strengths-animation {
+  animation: fade-in-right 1s forwards;
+}
+
 .bio-strengths-title {
   color: var(--bg-primary);
   background: var(--secondary-color);
   border-radius: 5px;
   padding: 0.325em 0.5em;
   margin-bottom: 0.25em;
+}
+
+.bio-strengths-list {
+  opacity: 0;
 }
 
 .bio-strengths-list-anchor {
@@ -190,9 +198,15 @@
   padding: 1em;
   border-radius: 5px;
   transition: all 200ms;
+  opacity: 0;
 }
 
-.skill-card-container:hover {
+.skill-card-container-animation {
+  animation: fade-in-sm-delay 2s forwards;
+}
+
+.skill-card-container:hover,
+.skill-card-container-animation:hover {
   transform: scale(1.1);
 }
 

@@ -32,6 +32,7 @@ function App() {
       setMobileNavIsActive(true);
     } else setMobileNavIsActive(false);
   };
+
   return (
     <div
       className="App"

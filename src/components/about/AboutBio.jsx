@@ -1,7 +1,13 @@
 import bioImage from '../../assets/bioImage.webp';
 import Image from '../Image';
+import { useInView } from 'react-intersection-observer';
 
 const AboutBio = () => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   return (
     <div className="bio-container grid">
       <div className="bio-image-container">
@@ -24,9 +30,11 @@ const AboutBio = () => {
           interested in collaborating, don't hesitate to reach out - I'm always up for a chat!
         </p>
       </div>
-      <div className="bio-strengths-container">
-        <h3 className="bio-strengths-title">Clifton Strengths</h3>
-        <ul className="bio-strengths-list">
+      <div className={'bio-strengths-container bio-strengths-container-animation'} ref={ref}>
+        <h3 className={inView ? 'bio-strengths-title bio-strengths-animation' : 'bio-strengths-title'}>
+          Clifton Strengths
+        </h3>
+        <ul className={inView ? 'bio-strengths-list bio-strengths-animation' : 'bio-strengths-list'}>
           <li>
             <a
               className="bio-strengths-list-anchor"

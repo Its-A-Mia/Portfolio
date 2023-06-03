@@ -3,8 +3,14 @@ import eShopImg from '../../assets/eShop.webp';
 import comingSoonImg from '../../assets/theWorldIf.webp';
 import PortfolioImg from '../../assets/Portfolio.webp';
 import Image from '../Image';
+import { useInView } from 'react-intersection-observer';
 
 const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimationActive }) => {
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+    triggerOnce: true,
+  });
+
   const projects = {
     sunsetSurfer: {
       title: 'Sunset Surfer',
@@ -56,27 +62,22 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
         },
       ],
     },
-    comingSoon: {
-      title: 'Denver Tennis Stringing',
+    PDFAutomation: {
+      title: 'PDF Automation',
       imgSrc: comingSoonImg,
-      alt: 'The world if I was hired meme photo--a futuristic city scape with a modular house and a man walking a dog in the foreground.',
+      alt: 'Thumbnail of the PDF automation project, featuring the automation cycle comprised of the trigger, pdf creation and delivery.',
       description:
-        'I am currently building a website for a personal tennis racket stringing company using React.js and TypeScript. This will eventually feature a custom design system and interactive 3D elements.',
-      techStack: ['React.js', 'TypeScript', 'Emotion', 'Storybook'],
-      urls: [
-        {
-          type: 'More Info',
-          url: 'https://github.com/Its-A-Mia/DTS_A_Stringing_Operation',
-        },
-      ],
+        "A microservice integration utilizing numerous AWS products, a pdf api library and SaaS API's to automate the delivery of packing lists to a company's fulfillment chain.",
+      techStack: ['AWS Lambda', 'Amazon API Gateway', 'Node.js', 'Zapier API', 'Method CRM API'],
+      urls: [],
     },
   };
 
   return (
-    <div className="projects-card grid" onAnimationEnd={() => setIsSwapAnimationActive(false)}>
+    <div className="projects-card grid" onAnimationEnd={() => setIsSwapAnimationActive(false)} ref={ref}>
       <div
         className={
-          isSwapAnimationActive
+          isSwapAnimationActive && inView
             ? 'projects-card-image-container projects-card-image-container-active'
             : 'projects-card-image-container'
         }
@@ -90,7 +91,9 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       </div>
       <div
         className={
-          isSwapAnimationActive ? 'projects-card-content projects-card-content-active' : 'projects-card-content'
+          isSwapAnimationActive && inView
+            ? 'projects-card-content projects-card-content-active'
+            : 'projects-card-content'
         }
       >
         <h3 className="projects-card-content-title">{projects[activeProject].title}</h3>
@@ -102,13 +105,15 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
             </p>
           ))}
         </div>
-        <div className="projects-card-content-btn-container">
-          {projects[activeProject].urls.map((url) => (
-            <a role="button" className="projects-card-content-btn" key={url.type} href={url.url} target="blank">
-              {url.type}
-            </a>
-          ))}
-        </div>
+        {projects[activeProject].urls.length > 0 ? (
+          <div className="projects-card-content-btn-container">
+            {projects[activeProject].urls.map((url) => (
+              <a role="button" className="projects-card-content-btn" key={url.type} href={url.url} target="blank">
+                {url.type}
+              </a>
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   );

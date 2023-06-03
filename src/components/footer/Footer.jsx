@@ -20,6 +20,7 @@ const Footer = () => {
           </a>
         </div>
         <p>Designed & Built by Mia Purdun</p>
+        <p>2023</p>
       </div>
     </footer>
   );

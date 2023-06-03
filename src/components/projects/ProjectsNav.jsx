@@ -3,6 +3,7 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
     if (projectName !== activeProject) {
       setIsSwapAnimationActive(true);
     }
+    console.log(projectName);
     setActiveProject(projectName);
   };
 
@@ -31,10 +32,10 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
       </li>
       <li
         className="projects-nav-item"
-        id={activeProject === 'comingSoon' ? 'projects-nav-active' : undefined}
-        onClick={() => handleClick('comingSoon')}
+        id={activeProject === 'PDF Automation' ? 'projects-nav-active' : undefined}
+        onClick={() => handleClick('PDFAutomation')}
       >
-        <button className="projects-nav-button">Coming Soon</button>
+        <button className="projects-nav-button">PDF Automation</button>
       </li>
     </ul>
   );
