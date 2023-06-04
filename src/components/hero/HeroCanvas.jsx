@@ -8,6 +8,8 @@ import { useRef, useEffect, useState } from 'react';
 
 const HeroCanvas = () => {
   const canvasRef = useRef();
+  const [styleHeight, setStyleHeight] = useState(undefined);
+  const [styleWidth, setStyleWidth] = useState(undefined);
 
   // variant bank
   // draw bank -- x, y, seed variant
@@ -67,13 +69,13 @@ const HeroCanvas = () => {
 
     if (!!window) {
       //the + prefix casts it to an integer
-      //the slice method gets rid of "px" let style_height = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);//get CSS width
-      let style_height = +getComputedStyle(canvas).getPropertyValue('height').slice(0, -2);
-      let style_width = +getComputedStyle(canvas).getPropertyValue('width').slice(0, -2);
+      //the slice method gets rid of "px" let styleHeight = +getComputedStyle(canvas).getPropertyValue("height").slice(0, -2);//get CSS width
+      setStyleHeight(+getComputedStyle(canvas).getPropertyValue('height').slice(0, -2));
+      setStyleWidth(+getComputedStyle(canvas).getPropertyValue('width').slice(0, -2));
 
       //scale the canvas
-      canvas.setAttribute('height', style_height);
-      canvas.setAttribute('width', style_width);
+      canvas.setAttribute('height', styleHeight);
+      canvas.setAttribute('width', styleWidth);
     }
 
     let dandelionSeedBank = populateSeedBank(context);
@@ -91,7 +93,7 @@ const HeroCanvas = () => {
     return () => {
       window.cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [styleHeight, styleWidth]);
 
   return <canvas id="hero-canvas" ref={canvasRef}></canvas>;
 };
