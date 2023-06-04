@@ -1,4 +1,4 @@
-const BeeIcon = ({ className, stroke }) => {
+const BeeIcon = ({ className, stroke, wingStrokeOpacity }) => {
   return (
     <svg className={className} id="bee-icon" viewBox="0 0 89 101" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -36,7 +36,7 @@ const BeeIcon = ({ className, stroke }) => {
       <path
         d="M56.0281 49.9943C60.0772 44.796 60.5537 9.73496 51.7546 9.17932C44.3472 8.71116 50.1168 37.2605 51.0254 40.6237C51.7889 43.4495 53.9038 51.7822 54.0749 48.8646C54.3264 44.5822 48.8982 37.0361 46.5736 33.9039C26.0186 6.19998 8.51214 29.2605 38.2845 41.0271C42.8401 42.8274 47.6185 44.2265 52.1279 45.9248"
         stroke={stroke}
-        strokeOpacity="0.9"
+        strokeOpacity={wingStrokeOpacity}
         strokeWidth="5"
         strokeLinecap="round"
         strokeLinejoin="round"

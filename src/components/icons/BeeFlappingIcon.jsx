@@ -1,6 +1,12 @@
-const BeeFlappingIcon = ({ className, stroke }) => {
+const BeeFlappingIcon = ({ className, stroke, wingStrokeOpacity }) => {
   return (
-    <svg className={className} id="bee-flapping-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className={className}
+      id="bee-flapping-icon"
+      viewBox="0 0 89 101"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M42.6825 59.3175C42.9083 67.3385 35.3439 76.8493 32.8319 80.9639"
         stroke="black"
@@ -36,7 +42,7 @@ const BeeFlappingIcon = ({ className, stroke }) => {
       <path
         d="M56.7135 50.8128C60.8848 45.712 81.6313 59.1861 86.2491 49.7033C88.888 44.2845 77.5875 42.0719 70.3425 44.0927C65.7321 45.3786 54.5475 52.5498 54.7877 49.6371C49.1889 45.8232 43.5712 42.8441 39.8365 41.2849C15.5611 31.1507 4.59916 56.4503 35.9059 50.6016C42.5184 49.3663 48.5981 47.5571 53.0659 49.3618"
         stroke={stroke}
-        stroke-opacity="0.9"
+        stroke-opacity={wingStrokeOpacity}
         stroke-width="5"
         stroke-linecap="round"
         stroke-linejoin="round"

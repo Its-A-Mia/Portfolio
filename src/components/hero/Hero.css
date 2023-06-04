@@ -18,6 +18,11 @@
   align-self: flex-start;
 }
 
+.hero-bee-flapping-primary {
+  align-self: flex-start;
+  transform: translateX(-74px);
+}
+
 .hero-bee-primary-line {
   padding-top: 41px;
   width: 45%;
@@ -34,7 +39,11 @@
 
 .hero-bee-secondary {
   align-self: flex-end;
-  rotate: 35deg;
+  transform: translateX(75px);
+}
+
+.hero-bee-flapping-secondary {
+  align-self: flex-end;
 }
 
 .hero-bee-secondary-line {
