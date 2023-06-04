@@ -11,10 +11,10 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
     <ul className="projects-nav">
       <li
         className="projects-nav-item"
-        id={activeProject === 'sunsetSurfer' ? 'projects-nav-active' : undefined}
-        onClick={() => handleClick('sunsetSurfer')}
+        id={activeProject === 'PDF Automation' ? 'projects-nav-active' : undefined}
+        onClick={() => handleClick('PDFAutomation')}
       >
-        <button className="projects-nav-button">Sunset Surfer</button>
+        <button className="projects-nav-button">PDF Automation</button>
       </li>
       <li
         className="projects-nav-item"
@@ -25,17 +25,18 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
       </li>
       <li
         className="projects-nav-item"
+        id={activeProject === 'sunsetSurfer' ? 'projects-nav-active' : undefined}
+        onClick={() => handleClick('sunsetSurfer')}
+      >
+        <button className="projects-nav-button">Sunset Surfer</button>
+      </li>
+
+      <li
+        className="projects-nav-item"
         id={activeProject === 'portfolio' ? 'projects-nav-active' : undefined}
         onClick={() => handleClick('portfolio')}
       >
         <button className="projects-nav-button">Portfolio</button>
-      </li>
-      <li
-        className="projects-nav-item"
-        id={activeProject === 'PDF Automation' ? 'projects-nav-active' : undefined}
-        onClick={() => handleClick('PDFAutomation')}
-      >
-        <button className="projects-nav-button">PDF Automation</button>
       </li>
     </ul>
   );

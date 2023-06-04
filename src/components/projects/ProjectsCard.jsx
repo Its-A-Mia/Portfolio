@@ -1,6 +1,6 @@
 import sunsetSurferImg from '../../assets/SunsetSurfer.webp';
 import eShopImg from '../../assets/eShop.webp';
-import comingSoonImg from '../../assets/theWorldIf.webp';
+import PDFAutomationImg from '../../assets/PDFAutomation.webp';
 import PortfolioImg from '../../assets/Portfolio.webp';
 import Image from '../Image';
 import { useInView } from 'react-intersection-observer';
@@ -64,7 +64,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
     },
     PDFAutomation: {
       title: 'PDF Automation',
-      imgSrc: comingSoonImg,
+      imgSrc: PDFAutomationImg,
       alt: 'Thumbnail of the PDF automation project, featuring the automation cycle comprised of the trigger, pdf creation and delivery.',
       description:
         "A microservice integration utilizing numerous AWS products, a pdf api library and SaaS API's to automate the delivery of packing lists to a company's fulfillment chain.",

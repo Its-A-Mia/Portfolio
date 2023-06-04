@@ -4,7 +4,7 @@ import ProjectsCard from './ProjectsCard';
 import ProjectsNav from './ProjectsNav';
 
 const Projects = () => {
-  const [activeProject, setActiveProject] = useState('sunsetSurfer');
+  const [activeProject, setActiveProject] = useState('PDFAutomation');
   const [isSwapAnimationActive, setIsSwapAnimationActive] = useState(true);
 
   return (
