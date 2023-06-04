@@ -3,19 +3,19 @@ import BeeFlappingIcon from '../icons/BeeFlappingIcon';
 import { useEffect, useState } from 'react';
 
 const BeePrimary = () => {
-  const [wingsUpOpacity, setWingsUpOpacity] = useState('0.9');
+  const [wingsUpOpacity, setWingsUpOpacity] = useState('0.6');
   const [wingsDownOpacity, setWingsDownOpacity] = useState('0.4');
 
   useEffect(() => {
     const flapping = setInterval(() => {
-      if (wingsUpOpacity === '0.9') {
+      if (wingsUpOpacity === '0.6') {
         setWingsUpOpacity('0.4');
-        setWingsDownOpacity('0.9');
+        setWingsDownOpacity('0.6');
       } else {
-        setWingsUpOpacity('0.9');
+        setWingsUpOpacity('0.6');
         setWingsDownOpacity('0.4');
       }
-    }, 100);
+    }, 160);
 
     return () => {
       clearInterval(flapping);
