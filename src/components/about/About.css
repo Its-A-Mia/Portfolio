@@ -40,23 +40,6 @@
 .bio-text-container {
   grid-column: 4 / span 6;
   grid-row: 1;
-  padding-bottom: 2em;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.bio-text-read-more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--bg-primary);
-  position: absolute;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  border-radius: 0 0 5px 5px;
-  box-shadow: 0 -4px 8px gray;
 }
 
 .bio-image {
@@ -81,7 +64,7 @@
 }
 
 .bio-strengths-animation {
-  animation: fade-in-right 1s forwards;
+  animation: fade-in-right 0.8s forwards;
 }
 
 .bio-strengths-title {
