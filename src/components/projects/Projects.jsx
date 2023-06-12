@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Projects.css';
 import ProjectsCard from './ProjectsCard';
 import ProjectsNav from './ProjectsNav';
+import ContentTitle from '../design-system/title/ContentTitle';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState('PDFAutomation');
@@ -11,7 +12,8 @@ const Projects = () => {
     <section className="projects super-section" id="projects">
       <div className="golden-border golden-border-top"></div>
       <div className="container grid">
-        <h2 className="section-title projects-title">Projects</h2>
+        <ContentTitle className={'projects-title'}>Projects</ContentTitle>
+        {/* <h2 className="section-title projects-title">Projects</h2> */}
         <ProjectsNav
           activeProject={activeProject}
           setActiveProject={setActiveProject}

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import SendMessageIcon from '../icons/SendMessageIcon';
 import './Contact.css';
 import ContactInput from './ContactInput';
+import ContentTitle from '../design-system/title/ContentTitle';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -11,7 +12,7 @@ const Contact = () => {
   return (
     <section className="super-section" id="contact">
       <div className="container grid">
-        <h2 className="section-title contact-title">Contact Me</h2>
+        <ContentTitle className={'contact-title'}>Contact Me</ContentTitle>
 
         <div className="contact-input-container">
           <form action="https://formsubmit.co/miapurdun@gmail.com" method="POST">
