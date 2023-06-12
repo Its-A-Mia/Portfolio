@@ -9,13 +9,13 @@ const BeeSecondary = () => {
   useEffect(() => {
     const flapping = setInterval(() => {
       if (wingsUpOpacity === '0.6') {
-        setWingsUpOpacity('0.4');
+        setWingsUpOpacity('0.3');
         setWingsDownOpacity('0.6');
       } else {
         setWingsUpOpacity('0.6');
-        setWingsDownOpacity('0.4');
+        setWingsDownOpacity('0.3');
       }
-    }, 140);
+    }, 90);
 
     return () => {
       clearInterval(flapping);

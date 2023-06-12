@@ -11,7 +11,7 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
     <ul className="projects-nav">
       <li
         className="projects-nav-item"
-        id={activeProject === 'PDF Automation' ? 'projects-nav-active' : undefined}
+        id={activeProject === 'PDFAutomation' ? 'projects-nav-active' : undefined}
         onClick={() => handleClick('PDFAutomation')}
       >
         <button className="projects-nav-button">PDF Automation</button>

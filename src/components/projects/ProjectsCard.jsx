@@ -4,12 +4,35 @@ import PDFAutomationImg from '../../assets/PDFAutomation.webp';
 import PortfolioImg from '../../assets/Portfolio.webp';
 import Image from '../Image';
 import { useInView } from 'react-intersection-observer';
+import { useCallback, useEffect, useRef } from 'react';
 
 const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimationActive }) => {
-  const { ref, inView, entry } = useInView({
-    threshold: 0,
+  const ref = useRef();
+
+  const {
+    ref: inViewRef,
+    inView,
+    entry,
+  } = useInView({
+    threshold: 0.75,
     triggerOnce: true,
   });
+
+  const setRefs = useCallback(
+    (node) => {
+      // Ref's from useRef needs to have the node assigned to `current`
+      ref.current = node;
+      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+      inViewRef(node);
+    },
+    [inViewRef]
+  );
+
+  useEffect(() => {
+    if (inView) {
+      ref.current.style.opacity = '100';
+    }
+  }, [inView]);
 
   const projects = {
     sunsetSurfer: {
@@ -74,7 +97,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
   };
 
   return (
-    <div className="projects-card grid" onAnimationEnd={() => setIsSwapAnimationActive(false)} ref={ref}>
+    <div className="projects-card grid" onAnimationEnd={() => setIsSwapAnimationActive(false)} ref={setRefs}>
       <div
         className={
           isSwapAnimationActive && inView
@@ -96,7 +119,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
             : 'projects-card-content'
         }
       >
-        <h3 className="projects-card-content-title">{projects[activeProject].title}</h3>
+        {/* <h3 className="projects-card-content-title">{projects[activeProject].title}</h3> */}
         <p className="projects-card-content-text">{projects[activeProject].description}</p>
         <div className="projects-card-content-subtext-container">
           {projects[activeProject].techStack.map((stack) => (
