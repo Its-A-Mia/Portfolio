@@ -52,9 +52,10 @@
   cursor: pointer;
   border-radius: 5px 5px 0 0;
   border: solid transparent 3px;
-  transition: all 400ms;
+  transition: all 400ms, opacity 1200ms;
   background-color: var(--secondary-color);
   margin: 0.4em 0;
+  opacity: 0;
 }
 
 .projects-nav-item:nth-of-type(even) {

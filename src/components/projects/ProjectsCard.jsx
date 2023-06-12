@@ -14,7 +14,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
     inView,
     entry,
   } = useInView({
-    threshold: 0.75,
+    threshold: 0.1,
     triggerOnce: true,
   });
 
