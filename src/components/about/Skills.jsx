@@ -1,5 +1,24 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import GitHub from '../icons/brands/GitHub';
+import {
+  APIWebhook,
+  AWS,
+  CLI,
+  CSS3,
+  Docker,
+  Figma,
+  Gimp,
+  GitHub,
+  HTML5,
+  JavaScript,
+  Jest,
+  JWT,
+  Nextjs,
+  Nodejs,
+  PostgreSQL,
+  Prisma,
+  React,
+  ResponsiveDesign,
+} from '../icons/brands';
 import SkillsBrand from './SkillsBrand';
 import { useInView } from 'react-intersection-observer';
 
@@ -33,64 +52,113 @@ const Skills = () => {
 
   const brands = [
     <>
-      <GitHub className={'skill-brand-icon'} />
+      <HTML5 className={'skill-brand-icon skill-brand-icon-small'} />
+      <p className="skill-brand-text">HTML5</p>
+    </>,
+    <>
+      <CSS3 className={'skill-brand-icon skill-brand-icon-small'} />
+      <p className="skill-brand-text">CSS3</p>
+    </>,
+    <>
+      <JavaScript className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">JavaScript</p>
+    </>,
+    <>
+      <Nextjs className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">NextJS</p>
+    </>,
+    <>
+      <React className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">React</p>
+    </>,
+    <>
+      <APIWebhook className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">API's</p>
+    </>,
+    <>
+      <ResponsiveDesign className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">RWD</p>
+    </>,
+    <>
+      <Nodejs className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">NodeJS</p>
+    </>,
+    <>
+      <JWT className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">JWT</p>
+    </>,
+    <>
+      <AWS className={'skill-brand-icon skill-brand-icon-large'} />
+      <p className="skill-brand-text">AWS</p>
+    </>,
+    <>
+      <PostgreSQL className={'skill-brand-icon skill-brand-icon-large'} />
+      <p className="skill-brand-text">PostgreSQL</p>
+    </>,
+    <>
+      <Prisma className={'skill-brand-icon skill-brand-icon-small'} />
+      <p className="skill-brand-text">Prisma</p>
+    </>,
+    <>
+      <GitHub className={'skill-brand-icon skill-brand-icon-medium'} />
       <p className="skill-brand-text">GitHub</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <CLI className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">CLI</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <Docker className={'skill-brand-icon skill-brand-icon-large'} />
+      <p className="skill-brand-text">Docker</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <Jest className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">Jest</p>
+    </>,
+
+    <>
+      <Figma className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">Figma</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <Gimp className={'skill-brand-icon skill-brand-icon-large'} />
+      <p className="skill-brand-text">Gimp</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <HTML5 className={'skill-brand-icon skill-brand-icon-small'} />
+      <p className="skill-brand-text">HTML5</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <CSS3 className={'skill-brand-icon skill-brand-icon-small'} />
+      <p className="skill-brand-text">CSS3</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <JavaScript className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">JavaScript</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <Nextjs className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">NextJS</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <React className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">React</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <APIWebhook className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">API's</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <ResponsiveDesign className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">RWD</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <Nodejs className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">NodeJS</p>
     </>,
     <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
-    </>,
-    <>
-      <GitHub className={'skill-brand-icon'} />
-      <p className="skill-brand-text">GitHub</p>
+      <JWT className={'skill-brand-icon skill-brand-icon-medium'} />
+      <p className="skill-brand-text">JWT</p>
     </>,
   ];
 

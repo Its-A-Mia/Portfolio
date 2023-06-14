@@ -9,6 +9,21 @@
   animation: socials-on-load 5000ms;
 }
 
+.socials-github-icon {
+  width: 30px;
+  display: block;
+  padding-bottom: 1em;
+  fill: var(--bg-primary);
+  transition: all 200ms;
+}
+
+.socials-linked-in-icon {
+  width: 30px;
+  display: block;
+  fill: var(--bg-primary);
+  transition: all 200ms;
+}
+
 .socials-github-link:hover .github-icon {
   fill: var(--dark);
 }

@@ -176,12 +176,11 @@
   grid-column: 2 / span 8;
   position: relative;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 4em;
-  border-top: var(--secondary-color) solid 3px;
-  border-bottom: var(--secondary-color) solid 1px;
-  padding: 1em;
+  padding: 2em;
   overflow: hidden;
+  background: rgba(247, 247, 247, 0.75);
 }
 
 .skill-card-container {
@@ -236,17 +235,34 @@
 
 .skill-brand {
   position: relative;
+  display: flex;
+  flex-direction: column;
   transition: all 100ms linear;
-  animation: banner-scroll 7000ms infinite linear;
+  animation: banner-scroll 19s infinite linear;
 }
 
 .skill-brand-icon {
-  margin: auto;
-  fill: black !important;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+}
+
+.skill-brand-icon-small {
+  width: 25px;
+}
+
+.skill-brand-icon-medium {
+  width: 30px;
+}
+
+.skill-brand-icon-large {
+  width: 35px;
 }
 
 .skill-brand-text {
-  margin: auto;
+  /* font-family: 'Antic', sans-serif; */
+  color: #555;
+  text-align: center;
+  font-size: small;
 }
 
 @media (max-width: 1080px) {
@@ -267,6 +283,6 @@
   }
 
   100% {
-    left: -354px;
+    left: -1890px;
   }
 }

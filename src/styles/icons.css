@@ -57,25 +57,6 @@
   width: 25px;
 }
 
-/* ===================
-        Brands 
-    =================== */
-
-.github-icon {
-  width: 30px;
-  display: block;
-  padding-bottom: 1em;
-  fill: var(--bg-primary);
-  transition: all 200ms;
-}
-
-.linked-in-icon {
-  width: 30px;
-  display: block;
-  fill: var(--bg-primary);
-  transition: all 200ms;
-}
-
 @media (max-width: 1080px) {
   .html-web-icon {
     width: 140px;

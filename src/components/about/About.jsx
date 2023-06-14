@@ -9,7 +9,6 @@ const About = () => {
       <div className="container grid">
         <ContentTitle className={'about-title'}>Journey and Skills</ContentTitle>
         <AboutBio />
-        <Skills />
       </div>
     </section>
   );

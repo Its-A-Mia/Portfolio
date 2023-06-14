@@ -1,6 +1,7 @@
 import bioImage from '../../assets/bioImage.webp';
 import Image from '../Image';
 import CliftonStrengths from './CliftonStrengths';
+import Skills from './Skills';
 
 const AboutBio = () => {
   return (
@@ -28,6 +29,7 @@ const AboutBio = () => {
           with my boyfriend. If you have any questions or are interested in collaborating, don't hesitate to reach out -
           I'm always up for a chat!
         </p>
+        <Skills />
       </div>
       <CliftonStrengths />
     </div>
