@@ -13,7 +13,6 @@ const Projects = () => {
       <div className="golden-border golden-border-top"></div>
       <div className="container grid">
         <ContentTitle className={'projects-title'}>Projects</ContentTitle>
-        {/* <h2 className="section-title projects-title">Projects</h2> */}
         <ProjectsNav
           activeProject={activeProject}
           setActiveProject={setActiveProject}

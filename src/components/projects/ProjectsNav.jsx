@@ -22,8 +22,9 @@ const ProjectsNav = ({ activeProject, setActiveProject, setIsSwapAnimationActive
 
   return (
     <ul className="projects-nav">
-      {navItems.map((item) => (
+      {navItems.map((item, i) => (
         <ProjectsNavItem
+          key={i}
           id={item.id}
           name={item.name}
           activeProject={activeProject}

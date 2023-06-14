@@ -12,6 +12,7 @@ const SendMessageIcon = () => {
         strokeWidth="10"
         strokeLinecap="round"
         strokeLinejoin="round"
+        fill="var(--bg-primary)"
       />
     </svg>
   );

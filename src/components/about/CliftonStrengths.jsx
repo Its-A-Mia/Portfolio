@@ -8,13 +8,13 @@ const CliftonStrengths = () => {
 
   return (
     <div className={'bio-strengths-container'} ref={ref}>
-      <h3 className={inView ? 'bio-strengths-title bio-strengths-animation' : 'bio-strengths-title'}>
+      <h4 className={inView ? 'bio-strengths-title bio-strengths-animation' : 'bio-strengths-title'}>
         Clifton Strengths
-      </h3>
+      </h4>
       <ul className={inView ? 'bio-strengths-list bio-strengths-animation' : 'bio-strengths-list'}>
         <li>
           <a
-            className="bio-strengths-list-anchor"
+            className="text-link"
             href="https://www.gallup.com/cliftonstrengths/en/252323/restorative-theme.aspx"
             target="_blank"
           >
@@ -23,7 +23,7 @@ const CliftonStrengths = () => {
         </li>
         <li>
           <a
-            className="bio-strengths-list-anchor"
+            className="text-link"
             href="https://www.gallup.com/cliftonstrengths/en/252134/achiever-theme.aspx"
             target="_blank"
           >
@@ -32,7 +32,7 @@ const CliftonStrengths = () => {
         </li>
         <li>
           <a
-            className="bio-strengths-list-anchor"
+            className="text-link"
             href="https://www.gallup.com/cliftonstrengths/en/252134/learner-theme.aspx"
             target="_blank"
           >
@@ -41,7 +41,7 @@ const CliftonStrengths = () => {
         </li>
         <li>
           <a
-            className="bio-strengths-list-anchor"
+            className="text-link"
             href="https://www.gallup.com/cliftonstrengths/en/252134/ideation-theme.aspx"
             target="_blank"
           >
@@ -50,7 +50,7 @@ const CliftonStrengths = () => {
         </li>
         <li>
           <a
-            className="bio-strengths-list-anchor"
+            className="text-link"
             href="https://www.gallup.com/cliftonstrengths/en/252134/intellection-theme.aspx"
             target="_blank"
           >

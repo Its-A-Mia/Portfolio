@@ -1,5 +1,5 @@
-import GitHub from '../icons/GitHub';
-import LinkedIn from '../icons/LinkedIn';
+import GitHub from '../icons/brands/GitHub';
+import LinkedIn from '../icons/brands/LinkedIn';
 import './Footer.css';
 
 const Footer = () => {
@@ -19,8 +19,7 @@ const Footer = () => {
             <LinkedIn />
           </a>
         </div>
-        <p>Designed & Built by Mia Purdun</p>
-        <p>2023</p>
+        <p>© Mia Purdun 2023</p>
       </div>
     </footer>
   );

@@ -40,6 +40,7 @@
 .bio-text-container {
   grid-column: 4 / span 6;
   grid-row: 1;
+  background: rgba(247, 247, 247, 0.5);
 }
 
 .bio-image {
@@ -56,7 +57,7 @@
 }
 
 .bio-strengths-container {
-  grid-column: 10 / span 2;
+  grid-column: 10 / span 3;
   border-left: solid var(--secondary-color) 3px;
   border-radius: 5px;
   padding-left: 3em;
@@ -173,24 +174,27 @@
 
 .skills-container {
   grid-column: 2 / span 8;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 4em;
+  border-top: var(--secondary-color) solid 3px;
+  border-bottom: var(--secondary-color) solid 1px;
+  padding: 1em;
+  overflow: hidden;
 }
 
 .skill-card-container {
   position: relative;
-  box-shadow: 0 0 8px black;
   padding: 1em;
   border-radius: 5px;
   transition: all 200ms;
   opacity: 0;
+  background-color: var(--bg-primary);
 }
 
 .skill-card-container-animation {
   animation: fade-in-sm-delay 2s forwards;
-}
-
-.skill-card-container:hover,
-.skill-card-container-animation:hover {
-  transform: scale(1.1);
 }
 
 .skill-card-container::before {
@@ -218,12 +222,31 @@
   font-weight: 700;
 }
 
+.skill-card-list {
+  display: flex;
+}
+
 .skill-card-list-item::before {
   content: '\2022';
   color: #ec5c77;
   font-weight: 700;
   display: inline-block;
   width: 1em;
+}
+
+.skill-brand {
+  position: relative;
+  transition: all 100ms linear;
+  animation: banner-scroll 7000ms infinite linear;
+}
+
+.skill-brand-icon {
+  margin: auto;
+  fill: black !important;
+}
+
+.skill-brand-text {
+  margin: auto;
 }
 
 @media (max-width: 1080px) {
@@ -235,5 +258,15 @@
 @media (max-width: 768px) {
   .skills-container {
     grid-column: 1 / span 5;
+  }
+}
+
+@keyframes banner-scroll {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -354px;
   }
 }

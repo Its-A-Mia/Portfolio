@@ -1,6 +1,6 @@
 import './Socials.css';
-import GitHub from '../icons/GitHub';
-import LinkedIn from '../icons/LinkedIn';
+import GitHub from '../icons/brands/GitHub';
+import LinkedIn from '../icons/brands/LinkedIn';
 
 const Socials = () => {
   return (

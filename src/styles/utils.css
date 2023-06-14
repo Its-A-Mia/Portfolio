@@ -26,6 +26,26 @@
   color: var(--bg-primary);
 }
 
+.text-link {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.text-link::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  width: 15px;
+  height: 20%;
+  background: var(--accent-color);
+  transition: all 200ms;
+}
+
+.text-link:hover::before {
+  width: 90%;
+}
+
 /* ===================
         Containers
     =================== */
