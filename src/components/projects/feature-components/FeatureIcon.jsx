@@ -32,7 +32,13 @@ const FeatureIcon = ({ icon, text, delay, highlightedIcon, iconName }) => {
         ref.current.style.opacity = '100';
       }, delay);
     }
-  }, [inView]);
+
+    if (highlightedIcon === iconName) {
+      ref.current.style.transform = 'scale(1.05)';
+    } else {
+      ref.current.style.transform = 'scale(1)';
+    }
+  }, [inView, highlightedIcon]);
 
   return (
     <div className="projects-features-icon-container" ref={setRefs}>

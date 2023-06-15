@@ -18,7 +18,7 @@ const PDFAutomationFeatures = ({ delay, inView }) => {
         } else if (highlightedIcon === 'Docker') {
           setHighlightedIcon('Node');
         }
-      }, 4000);
+      }, 3000);
     }
 
     return () => {

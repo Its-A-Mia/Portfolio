@@ -16,7 +16,7 @@ const SunsetSurferFeatures = ({ delay }) => {
       } else if (highlightedIcon === 'GitHub') {
         setHighlightedIcon('React');
       }
-    }, 4000);
+    }, 3000);
 
     return () => {
       clearTimeout(highlightInterval);

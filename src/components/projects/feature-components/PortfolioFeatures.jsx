@@ -16,7 +16,7 @@ const PortfolioFeatures = ({ delay }) => {
       } else if (highlightedIcon === 'AWS') {
         setHighlightedIcon('React');
       }
-    }, 4000);
+    }, 3000);
 
     return () => {
       clearTimeout(highlightInterval);

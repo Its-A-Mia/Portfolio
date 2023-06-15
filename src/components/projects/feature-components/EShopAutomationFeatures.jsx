@@ -22,7 +22,7 @@ const EShopAutomationFeatures = ({ delay }) => {
       } else if (highlightedIcon === 'Docker') {
         setHighlightedIcon('Next');
       }
-    }, 4000);
+    }, 3000);
 
     return () => {
       clearTimeout(highlightInterval);
