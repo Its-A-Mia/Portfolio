@@ -112,15 +112,7 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
           isSwapAnimationActive={isSwapAnimationActive}
         />
       </div>
-      {projects[activeProject].urls.length > 0 ? (
-        <div className="projects-card-content-btn-container">
-          {projects[activeProject].urls.map((url) => (
-            <a role="button" className="projects-card-content-btn" key={url.type} href={url.url} target="blank">
-              {url.type}
-            </a>
-          ))}
-        </div>
-      ) : null}
+
       <div
         className={
           isSwapAnimationActive && inView
@@ -137,6 +129,15 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
             </p>
           ))}
         </div> */}
+        {projects[activeProject].urls.length > 0 ? (
+          <div className="projects-card-content-btn-container">
+            {projects[activeProject].urls.map((url) => (
+              <a role="button" className="projects-card-content-btn" key={url.type} href={url.url} target="blank">
+                {url.type}
+              </a>
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   );

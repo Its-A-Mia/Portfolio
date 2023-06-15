@@ -176,7 +176,7 @@
   font-size: 1rem;
   background: var(--accent-color);
   box-shadow: 2px 2px 8px black;
-  padding: 1em 2em;
+  padding: 1.5em 2em;
 }
 
 .projects-card-content-subtext-container {
@@ -195,8 +195,16 @@
   padding: 0 0.5em;
 }
 
+.projects-card-content-btn-container {
+  grid-column: 2/-1;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 3em;
+}
+
 .projects-card-content-btn {
-  padding: 0.375em 0.875em;
+  padding: 0.375em 4em;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   color: black;
@@ -204,13 +212,6 @@
   background: var(--tertiary-color);
   border: solid var(--tertiary-color) 3px;
   transition: all 200ms;
-}
-
-.projects-card-content-btn-container {
-  grid-column: 2/-1;
-  display: flex;
-  justify-content: center;
-  gap: 3em;
 }
 
 .projects-card-content-btn:hover {
@@ -290,30 +291,22 @@
   color: var(--tertiary-color);
 }
 
-.projects-features-title {
-  font-family: 'Poppins', 'sans-serif';
-  font-weight: 700;
-  font-size: 1.5rem;
-  white-space: nowrap;
-  color: var(--tertiary-color);
-  margin-bottom: 1em;
-}
-
 .projects-features-icon-container {
   display: flex;
-  position: relative;
   align-items: center;
+
+  gap: 1em;
   opacity: 0;
   transition: all 1000ms;
 }
 
 .projects-features-icon {
+  min-width: 35px;
   fill: var(--tertiary-color);
 }
 
 .projects-features-icon-pop-up {
   opacity: 33%;
-  position: absolute;
   left: 55px;
   transition: all 200ms;
   font-size: 0.85rem;
@@ -327,13 +320,49 @@
 
 @media (max-width: 1080px) {
   .projects-features-container {
-    margin: 0 auto;
-    grid-column: 1 / -1;
+    grid-column: 2 / 8;
+    margin-top: 1em;
   }
 
   .projects-features-content {
-    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2em;
+  }
+
+  .projects-features-icon-container {
+    max-width: 280px;
+  }
+
+  .projects-features-icon {
+    min-width: 30px;
+  }
+
+  .projects-features-icon-pop-up {
+    opacity: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-features-container {
+    grid-column: 1 / -1;
+  }
+
+  .projects-features-icon-container {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 685px) {
+  .projects-features-container {
+    grid-column: 1 / -1;
+  }
+
+  .projects-features-icon-container {
+    max-width: none;
+  }
+
+  .projects-features-content {
+    justify-content: center;
   }
 }

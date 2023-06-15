@@ -50,7 +50,7 @@ const PortfolioFeatures = ({ delay }) => {
       />
 
       <FeatureIcon
-        icon={<AWS className={'projects-features-icon icon-medium'} />}
+        icon={<AWS className={'projects-features-icon icon-large'} />}
         text={'Deployed using AWS S3 and AWS Cloudfront with the DNS routed using Route 53'}
         delay={delay}
         iconName={'AWS'}

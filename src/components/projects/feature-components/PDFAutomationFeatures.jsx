@@ -53,7 +53,7 @@ const PDFAutomationFeatures = ({ delay, inView }) => {
       />
 
       <FeatureIcon
-        icon={<Docker className={'projects-features-icon icon-large'} />}
+        icon={<Docker className={'projects-features-icon icon-small'} />}
         text={'Containerized for SAM CLI deployment'}
         delay={delay}
         iconName={'Docker'}
