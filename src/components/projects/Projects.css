@@ -313,7 +313,7 @@
   cursor: default;
 }
 
-.projects-features-icon-pop-up:hover,
+.projects-features-icon-container:hover .projects-features-icon-pop-up,
 .projects-features-icon:hover + .projects-features-icon-pop-up {
   opacity: 100 !important;
 }
