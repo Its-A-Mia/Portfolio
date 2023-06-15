@@ -44,29 +44,22 @@
   font-size: 1.5rem;
   border-radius: 5px;
   gap: 1.5em;
-  padding: 0.25em 0.5em;
+  padding-right: 0.75em;
+  /* border-right: solid var(--tertiary-color) 2px; */
 }
 
 .projects-nav-item {
   position: relative;
   cursor: pointer;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   border: solid transparent 3px;
   transition: all 400ms, opacity 1200ms;
   background-color: var(--secondary-color);
-  margin: 0.4em 0;
+  margin: 0.4em;
   opacity: 0;
 }
 
-.projects-nav-item:nth-of-type(even) {
-  transform: translateX(20px);
-}
-
-.projects-nav-item:nth-of-type(even):hover {
-  transform: translateX(10px);
-}
-
-.projects-nav-item:nth-of-type(odd):hover {
+.projects-nav-item:hover {
   transform: translateX(10px);
 }
 
@@ -138,7 +131,7 @@
     =============== */
 
 .projects-card {
-  grid-column: 3 / -1;
+  grid-column: 3 / 10;
   isolation: isolate;
   opacity: 0;
 }
@@ -148,10 +141,10 @@
 }
 
 .projects-card-image-container {
-  grid-column: 2 / span 8;
+  grid-column: 2 / -1;
   grid-row: 1;
   z-index: 1;
-  margin: auto;
+  margin: 0 auto;
   max-width: 688px;
 }
 
@@ -160,11 +153,11 @@
 }
 
 .projects-card-content {
-  grid-column: 2 / span 8;
+  grid-column: 2 / -1;
   grid-row: 2;
   border-radius: 5px;
   max-width: 688px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .projects-card-content-active {
@@ -213,6 +206,7 @@
 }
 
 .projects-card-content-btn-container {
+  grid-column: 11;
   display: flex;
   gap: 2em;
 }
@@ -276,5 +270,66 @@
 
   .projects-card-content-btn-container {
     justify-content: center;
+  }
+}
+
+/* ===============
+      ProjectsFeatures
+    =============== */
+
+.projects-features-container {
+  grid-column: 10/-1;
+}
+
+.projects-features-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  color: var(--tertiary-color);
+}
+
+.projects-features-title {
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: 700;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  color: var(--tertiary-color);
+  margin-bottom: 1em;
+}
+
+.projects-features-icon-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.projects-features-icon {
+  fill: var(--tertiary-color);
+}
+
+.projects-features-icon-pop-up {
+  opacity: 33%;
+  position: absolute;
+  left: 55px;
+  transition: all 200ms;
+  font-size: 0.85rem;
+  cursor: default;
+}
+
+.projects-features-icon-pop-up:hover,
+.projects-features-icon:hover + .projects-features-icon-pop-up {
+  opacity: 100;
+}
+
+@media (max-width: 1080px) {
+  .projects-features-container {
+    margin: 0 auto;
+    grid-column: 1 / -1;
+  }
+
+  .projects-features-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
   }
 }

@@ -30,8 +30,8 @@ const Skills = () => {
     inView,
     entry,
   } = useInView({
-    // threshold: 1,
-    // triggerOnce: true,
+    threshold: 0.25,
+    triggerOnce: true,
   });
 
   const setRefs = useCallback(
@@ -48,7 +48,10 @@ const Skills = () => {
 
   useEffect(() => {
     setSkillsContainerWidth(ref.current.offsetWidth);
-  }, []);
+    if (inView) {
+      ref.current.style.opacity = 100;
+    }
+  }, [inView]);
 
   const brands = [
     <>

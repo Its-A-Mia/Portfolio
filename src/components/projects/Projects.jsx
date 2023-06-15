@@ -3,6 +3,7 @@ import './Projects.css';
 import ProjectsCard from './ProjectsCard';
 import ProjectsNav from './ProjectsNav';
 import ContentTitle from '../design-system/title/ContentTitle';
+import ProjectsFeatures from './ProjectsFeatures';
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState('PDFAutomation');
@@ -23,6 +24,7 @@ const Projects = () => {
           isSwapAnimationActive={isSwapAnimationActive}
           setIsSwapAnimationActive={setIsSwapAnimationActive}
         />
+        <ProjectsFeatures activeProject={activeProject} isSwapAnimationActive={isSwapAnimationActive} />
       </div>
       <div className="golden-border golden-border-bottom"></div>
     </section>

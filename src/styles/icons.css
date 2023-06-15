@@ -57,6 +57,18 @@
   width: 25px;
 }
 
+.icon-small {
+  width: 35px;
+}
+
+.icon-medium {
+  width: 40px;
+}
+
+.icon-large {
+  width: 45px;
+}
+
 @media (max-width: 1080px) {
   .html-web-icon {
     width: 140px;

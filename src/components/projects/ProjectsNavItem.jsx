@@ -37,7 +37,6 @@ const ProjectsNavItem = ({ id, name, activeProject, setActiveProject, setIsSwapA
     if (projectName !== activeProject) {
       setIsSwapAnimationActive(true);
     }
-    console.log(projectName);
     setActiveProject(projectName);
   };
 
