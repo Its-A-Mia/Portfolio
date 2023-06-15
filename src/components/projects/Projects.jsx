@@ -24,7 +24,7 @@ const Projects = () => {
           isSwapAnimationActive={isSwapAnimationActive}
           setIsSwapAnimationActive={setIsSwapAnimationActive}
         />
-        <ProjectsFeatures activeProject={activeProject} isSwapAnimationActive={isSwapAnimationActive} />
+        <ProjectsFeatures activeProject={activeProject} />
       </div>
       <div className="golden-border golden-border-bottom"></div>
     </section>

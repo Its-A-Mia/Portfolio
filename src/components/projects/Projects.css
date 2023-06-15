@@ -173,7 +173,7 @@
 .projects-card-content-text {
   color: black;
   border-radius: 5px;
-  font-size: 1.125rem;
+  font-size: 1rem;
   background: var(--accent-color);
   box-shadow: 2px 2px 8px black;
   padding: 1em 2em;
@@ -200,15 +200,17 @@
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   color: black;
+  white-space: nowrap;
   background: var(--tertiary-color);
   border: solid var(--tertiary-color) 3px;
   transition: all 200ms;
 }
 
 .projects-card-content-btn-container {
-  grid-column: 11;
+  grid-column: 2/-1;
   display: flex;
-  gap: 2em;
+  justify-content: center;
+  gap: 3em;
 }
 
 .projects-card-content-btn:hover {
@@ -301,6 +303,8 @@
   display: flex;
   position: relative;
   align-items: center;
+  opacity: 0;
+  transition: all 1000ms;
 }
 
 .projects-features-icon {
@@ -318,7 +322,7 @@
 
 .projects-features-icon-pop-up:hover,
 .projects-features-icon:hover + .projects-features-icon-pop-up {
-  opacity: 100;
+  opacity: 100 !important;
 }
 
 @media (max-width: 1080px) {

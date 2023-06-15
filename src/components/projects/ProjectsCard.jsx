@@ -130,13 +130,13 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       >
         {/* <h3 className="projects-card-content-title">{projects[activeProject].title}</h3> */}
         <p className="projects-card-content-text">{projects[activeProject].description}</p>
-        <div className="projects-card-content-subtext-container">
+        {/* <div className="projects-card-content-subtext-container">
           {projects[activeProject].techStack.map((stack) => (
             <p className="projects-card-content-subtext" key={stack}>
               {stack}
             </p>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

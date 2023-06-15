@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import FeatureText from './FeatureText';
 
-const FeatureIcon = ({ icon, text, delay }) => {
+const FeatureIcon = ({ icon, text, delay, highlightedIcon, iconName }) => {
   const ref = useRef();
 
   const {
@@ -25,13 +25,19 @@ const FeatureIcon = ({ icon, text, delay }) => {
   );
 
   useEffect(() => {
-    console.log(ref.current);
-  }, []);
+    let animationTimeout;
+
+    if (inView) {
+      animationTimeout = setTimeout(() => {
+        ref.current.style.opacity = '100';
+      }, delay);
+    }
+  }, [inView]);
 
   return (
     <div className="projects-features-icon-container" ref={setRefs}>
       {icon}
-      <FeatureText text={text} />
+      <FeatureText text={text} highlightedIcon={highlightedIcon} iconName={iconName} />
     </div>
   );
 };
