@@ -111,10 +111,38 @@
 
 .hero-illustration-container {
   grid-column: 2 / span 5;
+  display: flex;
   z-index: 0;
   position: relative;
   margin: auto auto;
   animation: blossom 800ms;
+  cursor: pointer;
+}
+
+.hero-illustration-text-container {
+  position: absolute;
+  top: 61px;
+  left: 60px;
+}
+
+.hero-illustration-text {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  line-height: 1.25rem;
+  font-family: 'Fira Code', sans-serif;
+}
+
+.hero-illustration-text-highligher {
+  width: 0;
+  position: absolute;
+  font-family: 'Fira Code', sans-serif;
+  background-color: var(--accent-color);
+  transition: all 300ms;
+}
+
+.hero-illustration-container:hover .hero-illustration-text-highligher {
+  width: 100%;
 }
 
 .hero-illustration-flower-one {
@@ -198,20 +226,4 @@
     grid-column: 1 / span 4;
     margin: auto auto;
   }
-}
-
-/* ===============
-    HeroCallToAction
-    =============== */
-
-.hero-call-to-action {
-  font-family: 'Antic' !important;
-  border-color: var(--accent-color) !important;
-  background: var(--accent-color) !important;
-  animation: fade-in-left-delay 4300ms;
-  padding: 0.375em 4em !important;
-}
-
-.hero-call-to-action:hover {
-  background: var(--dark) !important;
 }
