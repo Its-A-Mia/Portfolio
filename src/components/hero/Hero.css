@@ -205,9 +205,11 @@
     =============== */
 
 .hero-call-to-action {
+  font-family: 'Antic' !important;
   border-color: var(--accent-color) !important;
   background: var(--accent-color) !important;
   animation: fade-in-left-delay 4300ms;
+  padding: 0.375em 4em !important;
 }
 
 .hero-call-to-action:hover {

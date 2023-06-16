@@ -6,9 +6,9 @@ import Skills from './Skills';
 const AboutBio = () => {
   return (
     <div className="bio-container grid">
-      <div className="bio-image-container">
+      {/* <div className="bio-image-container">
         <Image className="bio-image" alt="a full-body shot of myself, Mia Purdun" src={bioImage} />
-      </div>
+      </div> */}
       <div className="bio-text-container">
         <p className="bio-text bio-top-text">
           At the ripe, old age of 8, I stumbled upon a dated networking textbook from my dad's college days. Of course,

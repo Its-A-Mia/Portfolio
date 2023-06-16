@@ -6,7 +6,7 @@
   background: var(--primary-color);
   background: linear-gradient(0deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   color: var(--bg-primary);
-  min-height: 1200px;
+  min-height: 950px;
 }
 
 .projects-title {
@@ -131,7 +131,7 @@
     =============== */
 
 .projects-card {
-  grid-column: 3 / 10;
+  grid-column: 3 / 9;
   isolation: isolate;
   opacity: 0;
 }
@@ -156,7 +156,7 @@
   grid-column: 2 / -1;
   grid-row: 2;
   border-radius: 5px;
-  max-width: 688px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -171,12 +171,12 @@
 }
 
 .projects-card-content-text {
-  color: black;
+  color: var(--bg-primary);
   border-radius: 5px;
   font-size: 1rem;
-  background: var(--accent-color);
-  box-shadow: 2px 2px 8px black;
-  padding: 1.5em 2em;
+  background: var(--dark);
+  box-shadow: 0px 0px 8px black;
+  padding: 0.75em 1em;
 }
 
 .projects-card-content-subtext-container {
@@ -205,6 +205,8 @@
 
 .projects-card-content-btn {
   padding: 0.375em 4em;
+  width: 250px;
+  text-align: center;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
   color: black;
@@ -281,14 +283,15 @@
     =============== */
 
 .projects-features-container {
-  grid-column: 10/-1;
+  grid-column: 9/-1;
 }
 
 .projects-features-content {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  color: var(--tertiary-color);
+  padding: 0 3em;
+  color: var(--bg-primary);
 }
 
 .projects-features-icon-container {
@@ -303,7 +306,7 @@
 
 .projects-features-icon {
   min-width: 35px;
-  fill: var(--tertiary-color);
+  fill: var(--accent-color);
 }
 
 .projects-features-icon-pop-up {

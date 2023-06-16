@@ -4,7 +4,7 @@ import Vine from './icons/Vine';
 const Image = ({ className, src, alt }) => {
   return (
     <div className="image-border">
-      <div className="image-flower">
+      {/* <div className="image-flower">
         <FlowerVariantTwo />
       </div>
       <div className="image-vine-left">
@@ -12,7 +12,7 @@ const Image = ({ className, src, alt }) => {
       </div>
       <div className="image-vine-bottom flip-horizontally">
         <Vine />
-      </div>
+      </div> */}
       <img className={className} src={src} alt={alt} />
     </div>
   );
