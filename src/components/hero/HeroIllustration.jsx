@@ -13,28 +13,28 @@ const HeroIllustration = () => {
       <div className="hero-illustration-text-container">
         <p className="hero-illustration-text" id="hero-illustration-text-1">
           {'<'}CHECK{'>'}
-          <span className="hero-illustration-text-highligher">
+          <span className="hero-illustration-text-highlighter">
             {'<'}CHECK{'>'}
           </span>
         </p>
 
         <p className="hero-illustration-text" id="hero-illustration-text-2">
           {'<'}OUT{'>'}
-          <span className="hero-illustration-text-highligher">
+          <span className="hero-illustration-text-highlighter">
             {'<'}OUT{'>'}
           </span>
         </p>
 
         <p className="hero-illustration-text" id="hero-illustration-text-3">
           {'<'}MY{'>'}
-          <span className="hero-illustration-text-highligher">
+          <span className="hero-illustration-text-highlighter">
             {'<'}MY{'>'}
           </span>
         </p>
 
         <p className="hero-illustration-text" id="hero-illustration-text-4">
           {'<'}PROJECTS{'>'}
-          <span className="hero-illustration-text-highligher">
+          <span className="hero-illustration-text-highlighter">
             {'<'}PROJECTS{'>'}
           </span>
         </p>

@@ -110,12 +110,13 @@
     =============== */
 
 .hero-illustration-container {
-  grid-column: 2 / span 5;
+  grid-column: 7 / span 5;
   display: flex;
   z-index: 0;
   position: relative;
   margin: auto auto;
-  animation: blossom 800ms;
+  transform: scale(0);
+  animation: blossom 1300ms 3s forwards;
   cursor: pointer;
 }
 
@@ -133,15 +134,49 @@
   font-family: 'Fira Code', sans-serif;
 }
 
-.hero-illustration-text-highligher {
+.hero-illustration-text-highlighter {
   width: 0;
   position: absolute;
   font-family: 'Fira Code', sans-serif;
   background-color: var(--accent-color);
+  animation: entry-highlight 1.5s;
+}
+
+.hero-illustration-text:nth-child(1) .hero-illustration-text-highlighter {
+  animation-delay: 4s;
   transition: all 300ms;
 }
 
-.hero-illustration-container:hover .hero-illustration-text-highligher {
+.hero-illustration-text:nth-child(2) .hero-illustration-text-highlighter {
+  animation-delay: 4.2s;
+  transition: all 500ms;
+}
+
+.hero-illustration-text:nth-child(3) .hero-illustration-text-highlighter {
+  animation-delay: 4.4s;
+  transition: all 700ms;
+}
+
+.hero-illustration-text:nth-child(4) .hero-illustration-text-highlighter {
+  animation-delay: 4.6s;
+  transition: all 900ms;
+}
+
+@keyframes entry-highlight {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+.hero-illustration-container:hover .hero-illustration-text-highlighter {
   width: 100%;
 }
 
@@ -150,14 +185,16 @@
   top: -50px;
   right: -80px;
   z-index: -1;
-  animation: blossom 1500ms;
+  transform: scale(0);
+  animation: blossom 2000ms 3s forwards;
 }
 
 .hero-illustration-flower-two {
   position: absolute;
   bottom: -80px;
   left: -75px;
-  animation: blossom 1000ms;
+  transform: scale(0);
+  animation: blossom 1500ms 3s forwards;
 }
 
 @media (max-width: 1080px) {
@@ -188,10 +225,12 @@
     =============== */
 
 .hero-greeting-container {
-  margin: auto 0;
+  margin: auto;
   background: rgba(247, 247, 247, 0.5);
-  grid-column: 7 / span 6;
+  grid-column: 2 / span 5;
+  grid-row: 1;
   z-index: 1;
+  /* text-align: l; */
 }
 
 .hero-greeting-title {
@@ -208,7 +247,7 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   padding-bottom: 1em;
-  animation: typing 6s steps(300, end);
+  animation: typing 4s steps(300, end);
 }
 
 @media (max-width: 1080px) {
