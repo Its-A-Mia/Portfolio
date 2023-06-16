@@ -1,22 +1,25 @@
 import { useEffect, useState } from 'react';
 import { APIWebhook, AWS, Docker, Nodejs } from '../../icons/brands';
 import FeatureIcon from './FeatureIcon';
+import Description from '../../icons/Description';
 
 const PDFAutomationFeatures = ({ delay, inView }) => {
-  const [highlightedIcon, setHighlightedIcon] = useState('Node');
+  const [highlightedIcon, setHighlightedIcon] = useState('Description');
 
   useEffect(() => {
     let highlightInterval;
     if (inView) {
       highlightInterval = setInterval(() => {
-        if (highlightedIcon === 'Node') {
+        if (highlightedIcon === 'Description') {
+          setHighlightedIcon('Node');
+        } else if (highlightedIcon === 'Node') {
           setHighlightedIcon('API');
         } else if (highlightedIcon === 'API') {
           setHighlightedIcon('AWS');
         } else if (highlightedIcon === 'AWS') {
           setHighlightedIcon('Docker');
         } else if (highlightedIcon === 'Docker') {
-          setHighlightedIcon('Node');
+          setHighlightedIcon('Description');
         }
       }, 3000);
     }
@@ -29,7 +32,15 @@ const PDFAutomationFeatures = ({ delay, inView }) => {
   return (
     <div className="projects-features-content">
       <FeatureIcon
-        icon={<Nodejs className={'projects-features-icon icon-medium'} />}
+        icon={<Description className={'projects-features-icon icon-large'} />}
+        text={"Microservice integration that automates packing list delivery to a company's fulfillment chain"}
+        delay={delay}
+        iconName={'Description'}
+        highlightedIcon={highlightedIcon}
+      />
+
+      <FeatureIcon
+        icon={<Nodejs className={'projects-features-icon icon-small'} />}
         text={'Built upon the Node.js runtime environment'}
         delay={delay}
         iconName={'Node'}

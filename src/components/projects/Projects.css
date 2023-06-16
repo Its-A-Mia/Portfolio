@@ -275,6 +275,8 @@
 
   .projects-card-content-btn-container {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
   }
 }
 
@@ -329,7 +331,7 @@
 
 @media (max-width: 1080px) {
   .projects-features-container {
-    grid-column: 2 / 8;
+    grid-column: 2 / 9;
     margin-top: 1em;
   }
 
@@ -340,7 +342,7 @@
   }
 
   .projects-features-icon-container {
-    max-width: 280px;
+    width: 270px;
     transform: scale(1) !important;
   }
 
@@ -359,7 +361,11 @@
   }
 
   .projects-features-icon-container {
-    max-width: 200px;
+    max-width: 240px;
+  }
+
+  .projects-features-content {
+    padding: 0;
   }
 }
 
@@ -370,9 +376,5 @@
 
   .projects-features-icon-container {
     max-width: none;
-  }
-
-  .projects-features-content {
-    justify-content: center;
   }
 }

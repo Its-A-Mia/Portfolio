@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react';
 import { CSS3, Docker, HTML5, Jest, Nextjs, PostgreSQL, Prisma } from '../../icons/brands';
 import FeatureIcon from './FeatureIcon';
+import Description from '../../icons/Description';
 
 const EShopAutomationFeatures = ({ delay }) => {
-  const [highlightedIcon, setHighlightedIcon] = useState('Next');
+  const [highlightedIcon, setHighlightedIcon] = useState('Description');
 
   useEffect(() => {
     let highlightInterval = setInterval(() => {
-      if (highlightedIcon === 'Next') {
+      if (highlightedIcon === 'Description') {
+        setHighlightedIcon('Next');
+      } else if (highlightedIcon === 'Next') {
         setHighlightedIcon('HTML');
       } else if (highlightedIcon === 'HTML') {
         setHighlightedIcon('CSS');
@@ -20,7 +23,7 @@ const EShopAutomationFeatures = ({ delay }) => {
       } else if (highlightedIcon === 'Jest') {
         setHighlightedIcon('Docker');
       } else if (highlightedIcon === 'Docker') {
-        setHighlightedIcon('Next');
+        setHighlightedIcon('Description');
       }
     }, 3000);
 
@@ -31,6 +34,14 @@ const EShopAutomationFeatures = ({ delay }) => {
 
   return (
     <div className="projects-features-content">
+      <FeatureIcon
+        icon={<Description className={'projects-features-icon icon-large'} />}
+        text={'Fullstack mock eCommerce site with custom-built API routes'}
+        delay={delay}
+        iconName={'Description'}
+        highlightedIcon={highlightedIcon}
+      />
+
       <FeatureIcon
         icon={<Nextjs className={'projects-features-icon icon-medium'} />}
         text={'Built using the Next.js Framework'}
