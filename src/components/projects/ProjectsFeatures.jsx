@@ -29,8 +29,6 @@ const ProjectsFeatures = ({ activeProject }) => {
     [inViewRef]
   );
 
-  console.log(inView);
-
   return (
     <div className="projects-features-container" ref={setRefs}>
       {activeProject === 'PDFAutomation' ? <PDFAutomationFeatures delay={delay} inView={inView} /> : null}

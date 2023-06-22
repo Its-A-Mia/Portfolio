@@ -23,34 +23,19 @@ import SkillsBrand from './SkillsBrand';
 import { useInView } from 'react-intersection-observer';
 
 const Skills = () => {
-  const ref = useRef();
-
-  const {
-    ref: inViewRef,
-    inView,
-    entry,
-  } = useInView({
-    threshold: 0.25,
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
     triggerOnce: true,
   });
-
-  const setRefs = useCallback(
-    (node) => {
-      // Ref's from useRef needs to have the node assigned to `current`
-      ref.current = node;
-      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
-      inViewRef(node);
-    },
-    [inViewRef]
-  );
 
   const [skillsContainerWidth, setSkillsContainerWidth] = useState(0);
 
   useEffect(() => {
-    setSkillsContainerWidth(ref.current.offsetWidth);
+    // setSkillsContainerWidth(entry.target.offsetWidth);
     if (inView) {
-      ref.current.style.opacity = 100;
+      entry.target.style.opacity = 100;
     }
+    console.log(inView);
   }, [inView]);
 
   const brands = [
@@ -166,7 +151,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills-container" ref={setRefs}>
+    <div className="skills-container" ref={ref}>
       {brands.map((item) => (
         <SkillsBrand skillsContainerWidth={skillsContainerWidth}>{item}</SkillsBrand>
       ))}

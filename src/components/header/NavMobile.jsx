@@ -1,7 +1,5 @@
 import Close from '../icons/Close';
-import NavDownloadLink from './NavDownloadLink';
 import NavLink from './NavLink';
-import resume from '../../assets/resume.pdf';
 
 const NavMobile = ({ mobileNavIsActive, setMobileNavIsActive }) => {
   const handleCloseButtonClick = () => {
@@ -17,7 +15,6 @@ const NavMobile = ({ mobileNavIsActive, setMobileNavIsActive }) => {
         <NavLink label={'Projects'} link={'#projects'} onClick={handleCloseButtonClick} />
         <NavLink label={'About'} link={'#about'} onClick={handleCloseButtonClick} />
         <NavLink label={'Contact'} link={'#contact'} onClick={handleCloseButtonClick} />
-        <NavDownloadLink label={'Resume'} link={resume} download={'Mia_Purdun_Resume'} />
       </nav>
     </aside>
   );

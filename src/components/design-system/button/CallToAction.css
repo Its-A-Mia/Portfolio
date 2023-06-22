@@ -1,0 +1,116 @@
+.buttons {
+  --border-radius: 5px;
+  --cta-color: #ec5c77;
+  border-radius: var(--border-radius);
+  text-align: center;
+  isolation: isolate;
+}
+
+.blob-btn {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  padding: 0.375em 2em;
+  white-space: nowrap;
+  text-align: center;
+  color: var(--cta-color);
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: 'fira code', sans-serif;
+  background-color: transparent;
+  transition: color 0.5s;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.blob-btn::before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--cta-color);
+  border-radius: var(--border-radius);
+}
+
+.blob-btn::after {
+  content: '';
+  z-index: -2;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+
+  transition: all 0.3s 0.2s;
+  border-radius: var(--border-radius);
+}
+
+.blob-btn:hover {
+  color: white;
+}
+
+.blob-btn:hover::after {
+  transition: all 0.3s;
+  left: 0;
+  top: 0;
+  border-radius: var(--border-radius);
+}
+
+.blob-btn-inner {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  background: var(--bg-primary);
+}
+
+.blob-btn-blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url('#goo');
+}
+
+.blob-btn-blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  background: var(--cta-color);
+  border-radius: 100%;
+  transform: translate3d(0, 150%, 0) scale(1.7);
+  transition: transform 0.45s;
+}
+
+.blob-btn-blob:nth-child(1) {
+  left: 0;
+  transition-delay: 0.08s;
+}
+
+.blob-btn-blob:nth-child(2) {
+  left: 30%;
+  transition-delay: calc(2 * 0.08s);
+}
+
+.blob-btn-blob:nth-child(3) {
+  left: 60%;
+  transition-delay: calc(3 * 0.08s);
+}
+
+.blob-btn-blob:nth-child(4) {
+  left: 90%;
+  transition-delay: calc(4 * 0.08s);
+}
+
+.blob-btn:hover .blob-btn-blob {
+  transform: translateZ(0) scale(1.7);
+
+  @supports (filter: url('#goo')) {
+    transform: translateZ(0) scale(1.4);
+  }
+}
+#goo {
+  height: 0;
+}

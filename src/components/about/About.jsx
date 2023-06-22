@@ -1,6 +1,7 @@
 import ContentTitle from '../design-system/title/ContentTitle';
 import './About.css';
 import AboutBio from './AboutBio';
+import AboutExtra from './AboutExtra';
 import Skills from './Skills';
 
 const About = () => {
@@ -9,6 +10,7 @@ const About = () => {
       <div className="container grid">
         <ContentTitle className={'about-title'}>Journey and Skills</ContentTitle>
         <AboutBio />
+        <AboutExtra />
       </div>
     </section>
   );

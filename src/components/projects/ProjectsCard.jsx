@@ -5,6 +5,7 @@ import PortfolioImg from '../../assets/Portfolio.webp';
 import Image from '../Image';
 import { useInView } from 'react-intersection-observer';
 import { useCallback, useEffect, useRef } from 'react';
+import CallToAction from '../design-system/button/CallToAction';
 
 const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimationActive }) => {
   const ref = useRef();
@@ -125,21 +126,12 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
             : 'projects-card-content'
         }
       >
-        {/* <h3 className="projects-card-content-title">{projects[activeProject].title}</h3> */}
-        {/* <p className="projects-card-content-text">{projects[activeProject].description}</p> */}
-        {/* <div className="projects-card-content-subtext-container">
-          {projects[activeProject].techStack.map((stack) => (
-            <p className="projects-card-content-subtext" key={stack}>
-              {stack}
-            </p>
-          ))}
-        </div> */}
         {projects[activeProject].urls.length > 0 ? (
           <div className="projects-card-content-btn-container">
             {projects[activeProject].urls.map((url) => (
-              <a role="button" className="projects-card-content-btn" key={url.type} href={url.url} target="blank">
+              <CallToAction className={'projects-card-content-btn'} href={url.url} width={200}>
                 {url.type}
-              </a>
+              </CallToAction>
             ))}
           </div>
         ) : null}
