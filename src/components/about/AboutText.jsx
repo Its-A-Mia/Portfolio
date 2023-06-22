@@ -14,11 +14,9 @@ const AboutText = ({ children }) => {
   }, [inView]);
 
   return (
-    <div className="bio-text-bar">
-      <p className="bio-text" ref={ref}>
-        {children}
-      </p>
-    </div>
+    <p className="bio-text" ref={ref}>
+      {children}
+    </p>
   );
 };
 

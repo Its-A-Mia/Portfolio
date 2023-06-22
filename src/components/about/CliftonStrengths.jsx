@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 
 const CliftonStrengths = () => {
   const { ref, inView, entry } = useInView({
-    threshold: 1,
+    threshold: 0.6,
     triggerOnce: true,
   });
 
@@ -16,14 +16,10 @@ const CliftonStrengths = () => {
 
   return (
     <div className={'bio-strengths-container'} ref={ref}>
-      <p className={inView ? 'bio-strengths-animation' : null}>Top 5</p>
-      <h4 className={inView ? 'bio-strengths-title bio-strengths-animation' : 'bio-strengths-title'}>
-        Clifton Strengths
-      </h4>
-      <CliftonStrengthsDivider
-        className={inView ? 'bio-strengths-divider bio-strengths-animation' : 'bio-strengths-divider'}
-      />
-      <ul className={inView ? 'bio-strengths-list bio-strengths-animation' : 'bio-strengths-list'}>
+      <p>Top 5</p>
+      <h4 className={'bio-strengths-title'}>Clifton Strengths</h4>
+      <CliftonStrengthsDivider className={'bio-strengths-divider'} />
+      <ul className={'bio-strengths-list'}>
         <li>
           <a
             className="text-link bio-strengths-list-anchor"

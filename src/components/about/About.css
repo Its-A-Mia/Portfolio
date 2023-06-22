@@ -46,20 +46,12 @@
   grid-column: 1 / span 6;
 }
 
-.bio-image {
-  max-height: 330px;
-}
-
 .bio-text {
   filter: blur(0.125em);
   max-width: 43em;
   padding-left: 0.625em;
   background: rgba(247, 247, 247, 0.8);
-  /* border-left: solid 0.5em var(--tertiary-color); */
   transition: all 1000ms;
-}
-
-.bio-text-bar {
   margin: 1em 3em;
 }
 
@@ -93,6 +85,12 @@
   transition: all 1000ms;
 }
 
+@media (max-width: 1080px) {
+  .bio-text-illustration {
+    display: none;
+  }
+}
+
 /* ===============
         Extra
     =============== */
@@ -100,30 +98,32 @@
 .bio-extra-container {
   grid-column: 2/-1;
   padding: 1em 0;
+  opacity: 0;
+  transition: all 1.5s;
 }
 
-.bio-extra-title {
-  font-family: 'Poppins';
-  font-weight: 700;
-  line-height: 0.5rem;
-  writing-mode: sideways-lr;
-}
-
-.bio-extra-title-container {
-  grid-column: 6;
+.bio-extra-left-container {
+  grid-column: 3 / 7;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--bg-primary);
-  border-radius: 15px;
-  background: var(--accent-color);
+  justify-content: end;
+  padding-right: 2em;
+  border-right: solid var(--accent-color) 3px;
+  height: 100%;
 }
 
 .bio-extra-left-content {
-  grid-column: 2 / 5;
+  margin: auto 0;
 }
 
-.bio-extra-right-content {
+.bio-extra-left-content-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 1em;
+}
+
+.bio-extra-right-container {
   grid-column: 7 / 10;
   padding-left: 1em;
 }
@@ -138,8 +138,9 @@
 
 .bio-strengths-container {
   opacity: 0;
-  /* background: rgba(247, 247, 247, 0.75); */
+  background: rgba(247, 247, 247, 0.75);
   width: fit-content;
+  transition: all 1.5s;
 }
 
 .bio-strengths-title {
@@ -154,7 +155,6 @@
 }
 
 .bio-strengths-list {
-  opacity: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -175,10 +175,6 @@
     grid-column: 2/-1;
   }
 
-  .bio-right-content {
-    grid-column: 2/-1;
-  }
-
   .bio-strengths-container {
     margin: 0 auto;
   }
@@ -195,16 +191,12 @@
     grid-column: 1 / span 5;
   }
 
-  .bio-image-container {
-    grid-column: 2 / span 2;
-    grid-row: 1;
-    margin: 0 auto;
+  .bio-text-container {
+    grid-column: 1 / span 5;
   }
 
-  .bio-text-container {
-    padding-top: 2.5em;
-    grid-column: 1 / span 5;
-    grid-row: 2;
+  .bio-text {
+    margin: 0.5em 0;
   }
 
   .bio-strengths-container {
