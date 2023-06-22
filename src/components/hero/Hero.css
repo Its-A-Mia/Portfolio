@@ -124,20 +124,25 @@
   position: absolute;
   top: 61px;
   left: 60px;
+  line-height: 1.25rem;
+  font-family: 'Fira Code', sans-serif;
 }
 
 .hero-illustration-text {
   width: fit-content;
   display: flex;
   position: relative;
-  line-height: 1.25rem;
-  font-family: 'Fira Code', sans-serif;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .hero-illustration-text-highlighter {
   width: 0;
   position: absolute;
-  font-family: 'Fira Code', sans-serif;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
   background-color: var(--accent-color);
   animation: entry-highlight 1.5s;
 }
@@ -199,7 +204,7 @@
 
 @media (max-width: 1080px) {
   .hero-illustration-container {
-    grid-column: 2 / span 3;
+    grid-column: 5 / span 3;
   }
 
   .hero-illustration-flower-one {
@@ -212,6 +217,13 @@
     position: absolute;
     bottom: -50px;
     left: -45px;
+  }
+
+  .hero-illustration-text-container {
+    top: 47px;
+    left: 44px;
+    line-height: 0.875rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -252,7 +264,7 @@
 
 @media (max-width: 1080px) {
   .hero-greeting-container {
-    grid-column: 5 / span 4;
+    grid-column: 2 / span 3;
   }
 
   .hero-greeting-subtitle {

@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 const AboutExtra = () => {
   const { ref, inView, entry } = useInView({
-    threshold: 1,
+    threshold: 0.6,
     triggerOnce: true,
   });
 
@@ -17,8 +17,8 @@ const AboutExtra = () => {
   }, [inView]);
 
   return (
-    <div className="bio-extra-container grid" ref={ref}>
-      <div className="bio-extra-left-container">
+    <div className="bio-extra-container grid">
+      <div className="bio-extra-left-container" ref={ref}>
         <div className="bio-extra-left-content">
           <p className="bio-extra-left-content-text">Take a peek at my</p>
           <CallToAction href={resume} download={'Mia_Purdun_Resume'}>

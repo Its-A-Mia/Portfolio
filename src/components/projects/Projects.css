@@ -103,6 +103,7 @@
 
   .projects-nav-item {
     padding: 0;
+    opacity: 100;
   }
 
   .projects-nav-item:nth-of-type(even) {

@@ -98,8 +98,6 @@
 .bio-extra-container {
   grid-column: 2/-1;
   padding: 1em 0;
-  opacity: 0;
-  transition: all 1.5s;
 }
 
 .bio-extra-left-container {
@@ -111,6 +109,8 @@
   border: solid var(--accent-color) 3px;
   min-height: 245px;
   max-width: 310px;
+  opacity: 0;
+  transition: all 1.5s;
 }
 
 .bio-extra-left-content {
