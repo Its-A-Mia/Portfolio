@@ -1,6 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import CallToAction from '../design-system/button/CallToAction';
 import CliftonStrengths from './CliftonStrengths';
+import resume from '../../assets/resume.pdf';
 import { useEffect } from 'react';
 
 const AboutExtra = () => {
@@ -20,7 +21,9 @@ const AboutExtra = () => {
       <div className="bio-extra-left-container">
         <div className="bio-extra-left-content">
           <p className="bio-extra-left-content-text">Take a peek at my</p>
-          <CallToAction>Resume</CallToAction>
+          <CallToAction href={resume} download={'Mia_Purdun_Resume'}>
+            Resume
+          </CallToAction>
         </div>
       </div>
       <div className="bio-extra-right-container">

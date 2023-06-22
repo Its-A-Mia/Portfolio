@@ -43,8 +43,7 @@
 }
 
 .contact-input-submit {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  text-align: left;
 }
 
 @media (max-width: 1080px) {

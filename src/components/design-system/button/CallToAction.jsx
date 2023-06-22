@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './CallToAction.css';
 
-const CallToAction = ({ children, className = '', onClick, href, type = 'primary', width }) => {
+const CallToAction = ({ children, className = '', onClick, href, type = 'primary', width, download }) => {
   const ref = useRef();
 
   useEffect(() => {}, []);
@@ -9,24 +9,44 @@ const CallToAction = ({ children, className = '', onClick, href, type = 'primary
   return (
     <>
       <div className={`buttons ${className}`} ref={ref}>
-        <a
-          className="blob-btn"
-          href={href}
-          target="_blank"
-          onClick={() => onClick()}
-          style={{ minWidth: `${width}px` }}
-        >
-          {children}
-          <span className="blob-btn-inner">
-            <span className="blob-btn-blobs">
-              <span className="blob-btn-blob"></span>
-              <span className="blob-btn-blob"></span>
-              <span className="blob-btn-blob"></span>
-              <span className="blob-btn-blob"></span>
-            </span>
-          </span>
-        </a>
-        <br />
+        {href ? (
+          <>
+            <a
+              className="blob-btn"
+              href={href}
+              download={download}
+              target="_blank"
+              onClick={() => onClick()}
+              style={{ minWidth: `${width}px` }}
+            >
+              {children}
+              <span className="blob-btn-inner">
+                <span className="blob-btn-blobs">
+                  <span className="blob-btn-blob"></span>
+                  <span className="blob-btn-blob"></span>
+                  <span className="blob-btn-blob"></span>
+                  <span className="blob-btn-blob"></span>
+                </span>
+              </span>
+            </a>
+            <br />
+          </>
+        ) : (
+          <>
+            <button className="blob-btn" onClick={() => onClick()} style={{ minWidth: `${width}px` }}>
+              {children}
+              <span className="blob-btn-inner">
+                <span className="blob-btn-blobs">
+                  <span className="blob-btn-blob"></span>
+                  <span className="blob-btn-blob"></span>
+                  <span className="blob-btn-blob"></span>
+                  <span className="blob-btn-blob"></span>
+                </span>
+              </span>
+            </button>
+            <br />
+          </>
+        )}
 
         <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
