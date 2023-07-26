@@ -12,13 +12,21 @@ const PDFAutomationFeatures = ({ delay, inView }) => {
       highlightInterval = setInterval(() => {
         if (highlightedIcon === 'Description') {
           setHighlightedIcon('Node');
-        } else if (highlightedIcon === 'Node') {
+        }
+
+        if (highlightedIcon === 'Node') {
           setHighlightedIcon('API');
-        } else if (highlightedIcon === 'API') {
+        }
+
+        if (highlightedIcon === 'API') {
           setHighlightedIcon('AWS');
-        } else if (highlightedIcon === 'AWS') {
+        }
+
+        if (highlightedIcon === 'AWS') {
           setHighlightedIcon('Docker');
-        } else if (highlightedIcon === 'Docker') {
+        }
+
+        if (highlightedIcon === 'Docker') {
           setHighlightedIcon('Description');
         }
       }, 3000);

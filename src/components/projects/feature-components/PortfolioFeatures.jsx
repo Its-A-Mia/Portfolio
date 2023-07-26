@@ -9,11 +9,17 @@ const PortfolioFeatures = ({ delay }) => {
     let highlightInterval = setInterval(() => {
       if (highlightedIcon === 'React') {
         setHighlightedIcon('HTML');
-      } else if (highlightedIcon === 'HTML') {
+      }
+
+      if (highlightedIcon === 'HTML') {
         setHighlightedIcon('CSS');
-      } else if (highlightedIcon === 'CSS') {
+      }
+
+      if (highlightedIcon === 'CSS') {
         setHighlightedIcon('AWS');
-      } else if (highlightedIcon === 'AWS') {
+      }
+
+      if (highlightedIcon === 'AWS') {
         setHighlightedIcon('React');
       }
     }, 3000);

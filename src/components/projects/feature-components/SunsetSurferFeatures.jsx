@@ -10,13 +10,21 @@ const SunsetSurferFeatures = ({ delay }) => {
     let highlightInterval = setInterval(() => {
       if (highlightedIcon === 'Description') {
         setHighlightedIcon('React');
-      } else if (highlightedIcon === 'React') {
+      }
+
+      if (highlightedIcon === 'React') {
         setHighlightedIcon('HTML');
-      } else if (highlightedIcon === 'HTML') {
+      }
+
+      if (highlightedIcon === 'HTML') {
         setHighlightedIcon('CSS');
-      } else if (highlightedIcon === 'CSS') {
+      }
+
+      if (highlightedIcon === 'CSS') {
         setHighlightedIcon('GitHub');
-      } else if (highlightedIcon === 'GitHub') {
+      }
+
+      if (highlightedIcon === 'GitHub') {
         setHighlightedIcon('Description');
       }
     }, 3000);

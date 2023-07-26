@@ -10,19 +10,33 @@ const EShopAutomationFeatures = ({ delay }) => {
     let highlightInterval = setInterval(() => {
       if (highlightedIcon === 'Description') {
         setHighlightedIcon('Next');
-      } else if (highlightedIcon === 'Next') {
+      }
+
+      if (highlightedIcon === 'Next') {
         setHighlightedIcon('HTML');
-      } else if (highlightedIcon === 'HTML') {
+      }
+
+      if (highlightedIcon === 'HTML') {
         setHighlightedIcon('CSS');
-      } else if (highlightedIcon === 'CSS') {
+      }
+
+      if (highlightedIcon === 'CSS') {
         setHighlightedIcon('Prisma');
-      } else if (highlightedIcon === 'Prisma') {
+      }
+
+      if (highlightedIcon === 'Prisma') {
         setHighlightedIcon('Postgres');
-      } else if (highlightedIcon === 'Postgres') {
+      }
+
+      if (highlightedIcon === 'Postgres') {
         setHighlightedIcon('Jest');
-      } else if (highlightedIcon === 'Jest') {
+      }
+
+      if (highlightedIcon === 'Jest') {
         setHighlightedIcon('Docker');
-      } else if (highlightedIcon === 'Docker') {
+      }
+
+      if (highlightedIcon === 'Docker') {
         setHighlightedIcon('Description');
       }
     }, 3000);

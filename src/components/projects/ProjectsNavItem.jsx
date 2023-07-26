@@ -1,23 +1,11 @@
 import { useInView } from 'react-intersection-observer';
-import { useCallback, useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 const ProjectsNavItem = ({ id, name, activeProject, setActiveProject, setIsSwapAnimationActive }) => {
-  // const ref = useRef();
-
   const { ref, inView, entry } = useInView({
     threshold: 1,
     triggerOnce: true,
   });
-
-  // const setRefs = useCallback(
-  //   (node) => {
-  //     // Ref's from useRef needs to have the node assigned to `current`
-  //     ref.current = node;
-  //     // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
-  //     inViewRef(node);
-  //   },
-  //   [inViewRef]
-  // );
 
   useEffect(() => {
     if (inView) {
