@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const SkillsBrand = ({ children, className, skillsContainerWidth }) => {
@@ -10,14 +10,12 @@ const SkillsBrand = ({ children, className, skillsContainerWidth }) => {
     entry,
   } = useInView({
     threshold: 0,
-    // triggerOnce: true,
+    triggerOnce: true,
   });
 
   const setRefs = useCallback(
     (node) => {
-      // Ref's from useRef needs to have the node assigned to `current`
       ref.current = node;
-      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
       inViewRef(node);
     },
     [inViewRef]
@@ -25,7 +23,6 @@ const SkillsBrand = ({ children, className, skillsContainerWidth }) => {
 
   useEffect(() => {
     if (ref.current.offsetLeft < skillsContainerWidth * 0.2 || ref.current.offsetLeft > skillsContainerWidth * 0.8) {
-      // ref.current.style.filter = `blur(4px)`;
     }
   }, [inView, skillsContainerWidth]);
 

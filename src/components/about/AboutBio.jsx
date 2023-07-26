@@ -1,7 +1,4 @@
-import bioImage from '../../assets/bioImage.webp';
-import Image from '../Image';
 import AboutText from './AboutText';
-import CliftonStrengths from './CliftonStrengths';
 import Skills from './Skills';
 import journeyIllustration from '../../assets/JourneyIllustration.webp';
 import { useInView } from 'react-intersection-observer';

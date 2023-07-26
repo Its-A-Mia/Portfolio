@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   APIWebhook,
   AWS,
@@ -31,7 +31,6 @@ const Skills = () => {
   const [skillsContainerWidth, setSkillsContainerWidth] = useState(0);
 
   useEffect(() => {
-    // setSkillsContainerWidth(entry.target.offsetWidth);
     if (inView) {
       entry.target.style.opacity = 100;
     }

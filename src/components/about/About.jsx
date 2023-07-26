@@ -2,7 +2,6 @@ import ContentTitle from '../design-system/title/ContentTitle';
 import './About.css';
 import AboutBio from './AboutBio';
 import AboutExtra from './AboutExtra';
-import Skills from './Skills';
 
 const About = () => {
   return (
