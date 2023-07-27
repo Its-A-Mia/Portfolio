@@ -1,6 +1,20 @@
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 const ContactInput = ({ label, type, value, setValue, name }) => {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.4,
+    triggerOnce: true,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      entry.target.style.opacity = '100';
+    }
+  }, [inView]);
+
   return (
-    <label className="contact-input-label">
+    <label className="contact-input-label" ref={ref}>
       {label}
       {type === 'textarea' ? (
         <textarea

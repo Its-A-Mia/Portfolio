@@ -71,3 +71,8 @@
 /* ===============
       ContactInput
     =============== */
+
+.contact-input-label {
+  opacity: 0;
+  transition: 0.5s all;
+}
