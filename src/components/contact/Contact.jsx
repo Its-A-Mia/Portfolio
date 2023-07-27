@@ -12,8 +12,6 @@ const Contact = () => {
 
   const ref = useRef();
 
-  const onSubmit = () => {};
-
   return (
     <section className="super-section" id="contact">
       <div className="container grid">

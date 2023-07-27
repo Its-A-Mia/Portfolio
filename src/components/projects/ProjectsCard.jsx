@@ -7,6 +7,8 @@ import PDFAutomation from './projects/pdfAutomation';
 import portfolio from './projects/portfolio';
 import sunsetSurfer from './projects/sunsetSurfer';
 
+const projects = { eShop, PDFAutomation, portfolio, sunsetSurfer };
+
 const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimationActive }) => {
   const { ref, inView, entry } = useInView({
     threshold: 0.1,
@@ -18,8 +20,6 @@ const ProjectsCard = ({ activeProject, isSwapAnimationActive, setIsSwapAnimation
       entry.target.style.opacity = '100';
     }
   }, [inView]);
-
-  const projects = { eShop, PDFAutomation, portfolio, sunsetSurfer };
 
   return (
     <div className="projects-card grid" onAnimationEnd={() => setIsSwapAnimationActive(false)} ref={ref}>
