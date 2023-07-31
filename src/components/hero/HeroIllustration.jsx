@@ -1,43 +1,29 @@
+import { useEffect, useRef, useState } from 'react';
 import FlowerVariantOne from '../icons/FlowerVariantOne';
 import FlowerVariantTwo from '../icons/FlowerVariantTwo';
 import HTMLWebIcon from '../icons/HTMLWebIcon';
+import HeroIllustrationText from './HeroIllustrationText';
 
 const HeroIllustration = () => {
+  const [isMouseOver, setIsMouseOver] = useState(false);
+
   return (
-    <a className="hero-illustration-container" href="./#projects">
+    <a
+      className="hero-illustration-container"
+      href="./#projects"
+      onMouseEnter={() => setIsMouseOver(true)}
+      onMouseLeave={() => setIsMouseOver(false)}
+    >
       <span className="hero-illustration-flower-one">
         <FlowerVariantTwo />
       </span>
       <HTMLWebIcon />
 
       <div className="hero-illustration-text-container">
-        <p className="hero-illustration-text" id="hero-illustration-text-1">
-          {'<'}CHECK{'>'}
-          <span className="hero-illustration-text-highlighter">
-            {'<'}CHECK{'>'}
-          </span>
-        </p>
-
-        <p className="hero-illustration-text" id="hero-illustration-text-2">
-          {'<'}OUT{'>'}
-          <span className="hero-illustration-text-highlighter">
-            {'<'}OUT{'>'}
-          </span>
-        </p>
-
-        <p className="hero-illustration-text" id="hero-illustration-text-3">
-          {'<'}MY{'>'}
-          <span className="hero-illustration-text-highlighter">
-            {'<'}MY{'>'}
-          </span>
-        </p>
-
-        <p className="hero-illustration-text" id="hero-illustration-text-4">
-          {'<'}PROJECTS{'>'}
-          <span className="hero-illustration-text-highlighter">
-            {'<'}PROJECTS{'>'}
-          </span>
-        </p>
+        <HeroIllustrationText text={'CHECK'} idNum={1} isMouseOver={isMouseOver} />
+        <HeroIllustrationText text={'OUT'} idNum={2} isMouseOver={isMouseOver} />
+        <HeroIllustrationText text={'MY'} idNum={3} isMouseOver={isMouseOver} />
+        <HeroIllustrationText text={'PROJECTS'} idNum={4} isMouseOver={isMouseOver} />
       </div>
 
       <span className="hero-illustration-flower-two">
