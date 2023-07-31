@@ -6,7 +6,7 @@
   background: var(--primary-color);
   background: linear-gradient(0deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   color: var(--bg-primary);
-  min-height: 960px;
+  min-height: 970px;
 }
 
 .projects-title {

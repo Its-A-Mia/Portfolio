@@ -10,7 +10,7 @@ const PDFAutomation = {
   urls: [
     {
       type: 'Source Code',
-      url: 'https://github.com/Its-A-Mia/',
+      url: 'https://github.com/Its-A-Mia/PDFAutomation',
     },
   ],
 };
