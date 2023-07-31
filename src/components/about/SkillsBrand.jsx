@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-const SkillsBrand = ({ children, className, skillsContainerWidth }) => {
+const SkillsBrand = ({ children, className, skillsContainerWidth, index }) => {
   const ref = useRef();
 
   const {
@@ -27,7 +27,7 @@ const SkillsBrand = ({ children, className, skillsContainerWidth }) => {
   }, [inView, skillsContainerWidth]);
 
   return (
-    <div className={`skill-brand ${className}`} ref={setRefs}>
+    <div className={`skill-brand ${className}`} key={index} ref={setRefs}>
       {children}
     </div>
   );

@@ -181,10 +181,6 @@
   }
 }
 
-.hero-illustration-container:hover .hero-illustration-text-highlighter {
-  width: 100%;
-}
-
 .hero-illustration-flower-one {
   position: absolute;
   top: -50px;

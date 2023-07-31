@@ -151,8 +151,10 @@ const Skills = () => {
 
   return (
     <div className="skills-container" ref={ref}>
-      {brands.map((item) => (
-        <SkillsBrand skillsContainerWidth={skillsContainerWidth}>{item}</SkillsBrand>
+      {brands.map((item, index) => (
+        <SkillsBrand index={index} skillsContainerWidth={skillsContainerWidth}>
+          {item}
+        </SkillsBrand>
       ))}
     </div>
   );
